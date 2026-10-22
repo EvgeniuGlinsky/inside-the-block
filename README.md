@@ -46,7 +46,7 @@ see `REPORT.md`):
   their **compute-unit price** and in **when they were written**;
 * prices are a **random permutation** of 8 levels (0 … 100 000 micro-lamports/CU) and the send order is an
   **independent random permutation**, so "price" and "arrival" are never confounded by design;
-* each probe of a batch has **its own fee payer** (8 funded sub-payers), so the probes share no writable
+* each probe of a batch has **its own fee payer** (one funded sub-payer per batch position), so the probes share no writable
   account and the leader is free to order them any way it likes.
 
 Three batch modes rotate over each validator's windows:
