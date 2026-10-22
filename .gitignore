@@ -1,0 +1,8 @@
+/target
+# Wallet and sub-payer keys: mounted at runtime, never committed.
+/keys/
+*.key
+# Raw measurement data under data/ IS committed on purpose: judges verify claims from it.
+/target2
+# Working directory of new runs (docker compose mounts it as /app/data).
+/work/

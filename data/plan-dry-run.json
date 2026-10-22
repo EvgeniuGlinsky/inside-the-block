@@ -1,0 +1,164 @@
+{
+  "created_unix": 1792702911,
+  "epoch": 1065,
+  "planned_at_slot": 460180414,
+  "windows_per_validator": 3,
+  "targets": [
+    {
+      "identity": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+      "client_id": "AgaveBam",
+      "version": "4.3.2",
+      "tpu_quic": "63.254.167.199:5010",
+      "stake_share": 0.004434833784864492,
+      "windows": [
+        460180732,
+        460180856,
+        460181040
+      ]
+    },
+    {
+      "identity": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+      "client_id": "AgaveBam",
+      "version": "4.3.2",
+      "tpu_quic": "208.91.105.55:5010",
+      "stake_share": 0.02874156443272703,
+      "windows": [
+        460180796,
+        460180884,
+        460181152
+      ]
+    },
+    {
+      "identity": "FBKFWadXZJahGtFitAsBvbqh5968gLY7dMBBJUoUjeNi",
+      "client_id": "HarmonicAgave",
+      "version": "4.3.2",
+      "tpu_quic": "64.130.46.242:12326",
+      "stake_share": 0.00929878367301102,
+      "windows": [
+        460180764,
+        460180792,
+        460180892
+      ]
+    },
+    {
+      "identity": "BtsmiEEvnSuUnKxqXj2PZRYpPJAc7C34mGz8gtJ1DAaH",
+      "client_id": "HarmonicAgave",
+      "version": "4.3.2",
+      "tpu_quic": "64.130.46.242:12315",
+      "stake_share": 0.009337544396351646,
+      "windows": [
+        460180728,
+        460180936,
+        460181032
+      ]
+    },
+    {
+      "identity": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+      "client_id": "JitoLabs",
+      "version": "4.3.2",
+      "tpu_quic": "64.130.57.215:8002",
+      "stake_share": 0.036553015404341305,
+      "windows": [
+        460180720,
+        460180784,
+        460180808
+      ]
+    },
+    {
+      "identity": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+      "client_id": "JitoLabs",
+      "version": "4.3.2",
+      "tpu_quic": "64.130.32.153:8002",
+      "stake_share": 0.025033622479175746,
+      "windows": [
+        460180780,
+        460181052,
+        460181272
+      ]
+    },
+    {
+      "identity": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+      "client_id": "Firedancer",
+      "version": "26.10.4",
+      "tpu_quic": "86.54.152.246:9007",
+      "stake_share": 0.016106444621253116,
+      "windows": [
+        460180948,
+        460181472,
+        460181520
+      ]
+    },
+    {
+      "identity": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+      "client_id": "Firedancer",
+      "version": "26.10.4",
+      "tpu_quic": "104.204.143.114:9007",
+      "stake_share": 0.01784902258588729,
+      "windows": [
+        460181020,
+        460181256,
+        460181656
+      ]
+    },
+    {
+      "identity": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+      "client_id": "HarmonicFiredancer",
+      "version": "26.10.4",
+      "tpu_quic": "198.13.140.105:12351",
+      "stake_share": 0.016028177375762523,
+      "windows": [
+        460180828,
+        460180880,
+        460181072
+      ]
+    },
+    {
+      "identity": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+      "client_id": "HarmonicFiredancer",
+      "version": "26.10.4",
+      "tpu_quic": "198.13.140.105:12349",
+      "stake_share": 0.02226428762212332,
+      "windows": [
+        460180964,
+        460180980,
+        460181224
+      ]
+    },
+    {
+      "identity": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+      "client_id": "Agave",
+      "version": "4.3.2",
+      "tpu_quic": "5.199.172.176:12002",
+      "stake_share": 0.004291976010007321,
+      "windows": [
+        460181544,
+        460182040,
+        460182144
+      ]
+    },
+    {
+      "identity": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+      "client_id": "Agave",
+      "version": "4.3.2",
+      "tpu_quic": "185.189.44.172:12002",
+      "stake_share": 0.002765128344878499,
+      "windows": [
+        460181828,
+        460182680,
+        460182972
+      ]
+    }
+  ],
+  "client_stake": {
+    "Agave": 0.011051534620375144,
+    "AgaveBam": 0.36497316407277114,
+    "FireBAM": 0.014223379411875597,
+    "Firedancer": 0.06576566507128175,
+    "HarmonicAgave": 0.23602857143483053,
+    "HarmonicFiredancer": 0.06236104999315474,
+    "JitoLabs": 0.23184174801823318,
+    "Raiku": 0.000804726873914329,
+    "Rakurai": 0.01216490118223139,
+    "Unknown(27606)": 0.0007852593213323842
+  }
+}

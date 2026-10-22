@@ -1,0 +1,26 @@
+# One command, dry run:     docker compose up --build
+# Live (spends at most 0.05 SOL in fees):
+#   docker compose run --rm itb keygen            # prints the address to fund
+#   docker compose run --rm itb pipeline --live --max-spend-sol 0.05
+# Re-derive the published statistics from the published raw data:
+#   docker compose run --rm reanalyze
+services:
+  itb:
+    build: .
+    environment:
+      RPC_URL: ${RPC_URL:-https://api.mainnet-beta.solana.com}
+      WS_URL: ${WS_URL:-wss://api.mainnet-beta.solana.com}
+      # Read only with --live (or if the file exists). Keys come in through the volume, never the image or repo.
+      KEYPAIR: /app/keys/payer.json
+    volumes:
+      # New runs go to ./work, so they never mix with the published measurements in ./data.
+      - ./work:/app/data
+      - ./keys:/app/keys
+    command: ["pipeline"]
+
+  reanalyze:
+    build: .
+    volumes:
+      - ./data:/app/data
+    # Fixed seed: the output is byte-identical to the committed data/RESULTS.md (checked in CI).
+    command: ["analyze", "--permutations", "10000"]

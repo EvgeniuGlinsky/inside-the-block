@@ -1,0 +1,25 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --locked
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the image
+        run: docker compose build
+      - name: Dry-run planning against mainnet (read-only, sends nothing)
+        run: docker compose run --rm itb plan --windows-per-validator 3 --horizon-slots 9000
+      - name: Published statistics are reproducible from the published raw data
+        run: |
+          docker compose run --rm reanalyze
+          git diff --exit-code -- data/RESULTS.md data/results.json
