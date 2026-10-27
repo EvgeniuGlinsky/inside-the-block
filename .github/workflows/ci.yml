@@ -21,5 +21,5 @@ jobs:
         run: docker compose run --rm itb plan --windows-per-validator 3 --horizon-slots 9000
       - name: Published statistics are reproducible from the published raw data
         run: |
-          docker compose run --rm reanalyze
+          docker compose --profile reanalyze run --rm reanalyze
           git diff --exit-code -- data/RESULTS.md data/results.json

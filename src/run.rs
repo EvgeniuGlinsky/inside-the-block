@@ -6,6 +6,7 @@
 //! whether the timing lands inside the window — it only skips the network write. Live mode
 //! needs `--live` and is bounded by `SpendGuard`.
 
+use crate::collect::{read_jsonl, Landed};
 use crate::plan::{Plan, Target};
 use crate::quic::TpuSender;
 use crate::rpc::Rpc;
@@ -21,6 +22,7 @@ use solana_hash::Hash;
 use solana_keypair::Keypair;
 use solana_pubkey::Pubkey;
 use solana_signer::Signer;
+use std::collections::HashMap;
 use std::io::Write;
 use std::path::{Path, PathBuf};
 use std::str::FromStr;
@@ -105,15 +107,43 @@ pub struct BatchRecord {
 }
 
 /// Hard limit on lamports spent on fees. Checked *before* every transaction with its
-/// worst-case fee, so the cap holds even if every probe lands and pays in full.
+/// worst-case fee, so the cap holds even if every probe lands and pays in full. It starts from
+/// what earlier live runs in the same data directory already spent (`prior_spend`), so the cap
+/// bounds the whole measurement, not one run.
 pub struct SpendGuard {
     cap: u64,
     committed: u64,
 }
 
+/// Fees already paid by the live runs recorded in `sends`: the actual fee of every probe that was
+/// located on chain, the worst case of every probe not (yet) located — before `collect` that is
+/// all of them — and one funding and one sweep transfer per sub-payer of each run. Probes that
+/// were stopped by the cap were never sent and cost nothing.
+pub fn prior_spend(sends: &[SendRecord], landed: &[Landed]) -> u64 {
+    let fee_of: HashMap<&str, u64> = landed.iter().map(|l| (l.signature.as_str(), l.fee)).collect();
+    let mut payers: HashMap<&str, usize> = HashMap::new();
+    let mut spent = 0u64;
+    for s in sends.iter().filter(|s| s.live) {
+        if s.error.as_deref().is_some_and(|e| e.starts_with("spend cap reached")) {
+            continue;
+        }
+        spent += fee_of.get(s.signature.as_str()).copied().unwrap_or_else(|| txs::max_fee(s.cu_limit, s.cu_price_micro));
+        let n = payers.entry(s.run_id.as_str()).or_default();
+        *n = (*n).max(s.send_seq + 1);
+    }
+    spent + payers.values().map(|&n| 2 * txs::BASE_FEE * n as u64).sum::<u64>()
+}
+
 impl SpendGuard {
     pub fn new(cap: u64) -> Self {
         Self { cap, committed: 0 }
+    }
+    /// A guard for a run that follows earlier ones: `spent` lamports are already used up.
+    pub fn with_spent(cap: u64, spent: u64) -> Result<Self> {
+        if spent > cap {
+            bail!("earlier live runs in this data directory already spent {spent} lamports, above the cap of {cap}");
+        }
+        Ok(Self { cap, committed: spent })
     }
     pub fn reserve(&mut self, worst_case_fee: u64) -> Result<()> {
         if self.committed + worst_case_fee > self.cap {
@@ -187,6 +217,10 @@ pub async fn run(rpc: &Rpc, ws_url: &str, plan: &Plan, a: &RunArgs, data_dir: &P
     }
     let run_id = format!("{}-{}", if a.live { "live" } else { "dry" }, now_ns() / 1_000_000_000);
     let mut rng = StdRng::seed_from_u64(a.seed);
+    let prior = prior_spend(
+        &read_jsonl::<SendRecord>(&data_dir.join("sends.jsonl"))?,
+        &read_jsonl::<Landed>(&data_dir.join("landed.jsonl"))?,
+    );
     let mut sends = Jsonl::open(&data_dir.join("sends.jsonl"))?;
     let mut batches = Jsonl::open(&data_dir.join("batches.jsonl"))?;
 
@@ -202,7 +236,25 @@ pub async fn run(rpc: &Rpc, ws_url: &str, plan: &Plan, a: &RunArgs, data_dir: &P
 
     let worst_probe = txs::max_fee(a.cu_limit, *a.price_levels.iter().max().unwrap());
     let probes_planned = (windows.len() * a.batch_size) as u64;
-    let mut guard = SpendGuard::new(a.max_spend_lamports);
+    // Sub-payers are funded by one transfer each and swept back by one transfer each.
+    let transfer_fees = 2 * txs::BASE_FEE * a.batch_size as u64;
+    // Worst case of this run: every probe lands at the top price (+1 lamport sink transfer).
+    let run_worst = probes_planned * (worst_probe + 1) + transfer_fees;
+    println!(
+        "spend: earlier live runs in {} used {} lamports; this run at most {}; cap {}",
+        data_dir.display(),
+        prior,
+        run_worst,
+        a.max_spend_lamports
+    );
+    if a.live && prior + run_worst > a.max_spend_lamports {
+        bail!(
+            "refusing to start: earlier runs {prior} + this run's worst case {run_worst} lamports > cap {} \
+             (plan fewer windows, lower --price-levels, or point --data-dir at a new measurement)",
+            a.max_spend_lamports
+        );
+    }
+    let mut guard = SpendGuard::with_spent(a.max_spend_lamports, if a.live { prior } else { 0 })?;
 
     // Payers. Live: one funded sub-payer per batch position, so probes of a batch never share a
     // writable account (except the deliberate sink in conflict mode). Dry: throwaway keys.
@@ -242,6 +294,9 @@ pub async fn run(rpc: &Rpc, ws_url: &str, plan: &Plan, a: &RunArgs, data_dir: &P
                 funding_cost + rent
             );
         }
+        // The sweep at the end pays one base fee per sub-payer: reserve it now, so the cap cannot
+        // run out between the last probe and getting the lamports back.
+        guard.reserve(txs::BASE_FEE * a.batch_size as u64)?;
         // Save sub-payer keys before funding them, so a crash never strands lamports.
         let keys: Vec<Vec<u8>> = payers.iter().map(|k| k.to_bytes().to_vec()).collect();
         std::fs::create_dir_all(&a.keys_dir)?;
@@ -476,7 +531,9 @@ async fn wait_confirmed(rpc: &Rpc, sigs: &[String], timeout: Duration) -> Result
 
 #[cfg(test)]
 mod tests {
-    use super::SpendGuard;
+    use super::{prior_spend, Mode, SendRecord, SpendGuard};
+    use crate::collect::Landed;
+    use crate::txs::{max_fee, BASE_FEE};
 
     #[test]
     fn guard_refuses_past_cap() {
@@ -485,5 +542,62 @@ mod tests {
         assert!(g.reserve(4_000).is_ok());
         assert!(g.reserve(1).is_err());
         assert_eq!(g.committed(), 10_000);
+    }
+
+    fn send(run: &str, seq: usize, price: u64, sig: &str, error: Option<&str>) -> SendRecord {
+        SendRecord {
+            run_id: run.into(),
+            live: true,
+            batch_id: format!("{run}-b000"),
+            mode: Mode::Burst,
+            identity: "v".into(),
+            client_id: "c".into(),
+            version: "1".into(),
+            window_start: 0,
+            send_seq: seq,
+            cu_price_micro: price,
+            cu_limit: 30_000,
+            payer: "p".into(),
+            signature: sig.into(),
+            path: "quic-direct".into(),
+            sent_at_ns: 0,
+            observed_slot: 0,
+            observed_slot_age_ms: 0,
+            error: error.map(String::from),
+        }
+    }
+
+    #[test]
+    fn prior_spend_counts_actual_fees_worst_cases_and_transfers() {
+        let sends = vec![
+            send("live-1", 0, 100_000, "a", None),
+            send("live-1", 1, 0, "b", None),
+            // Stopped by the cap: never sent.
+            send("live-1", 2, 100_000, "c", Some("spend cap reached: 1 + 2 > 3 lamports")),
+            send("live-2", 0, 20_000, "d", None),
+        ];
+        let landed = vec![Landed {
+            signature: "a".into(),
+            batch_id: "live-1-b000".into(),
+            slot: 1,
+            leader: "v".into(),
+            index: 0,
+            block_tx_count: 2,
+            fee: 8_000,
+            cu_consumed: 1,
+            failed: false,
+        }];
+        // a: actual 8000; b and d not located: worst case; live-1 had 2 payers counted (seq 0..1;
+        // the refused seq 2 is skipped), live-2 one; each payer one funding and one sweep fee.
+        let expected = 8_000 + max_fee(30_000, 0) + max_fee(30_000, 20_000) + 2 * BASE_FEE * 3;
+        assert_eq!(prior_spend(&sends, &landed), expected);
+    }
+
+    #[test]
+    fn earlier_runs_count_against_the_cap() {
+        assert!(SpendGuard::with_spent(10_000, 10_001).is_err());
+        let mut g = SpendGuard::with_spent(10_000, 9_000).unwrap();
+        assert!(g.reserve(1_000).is_ok());
+        assert!(g.reserve(1).is_err());
     }
 }

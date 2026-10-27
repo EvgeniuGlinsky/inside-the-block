@@ -1,758 +1,4679 @@
 {
-  "ordering": [
+  "block_competition": [
+    {
+      "blocks": 20,
+      "client_id": "Agave",
+      "fee_tau_iqr": [
+        -0.0011535982085298408,
+        0.058499301829940474
+      ],
+      "median_block_txs": 328,
+      "median_fee_tau": 0.030697822665790155,
+      "outpaid_below_probe": 0.7068965517241379,
+      "probe_median_position": 0.26099706744868034,
+      "probes": 76
+    },
+    {
+      "blocks": 16,
+      "client_id": "AgaveBam",
+      "fee_tau_iqr": [
+        0.053563869623262025,
+        0.13527180783817952
+      ],
+      "median_block_txs": 349,
+      "median_fee_tau": 0.11666731073926653,
+      "outpaid_below_probe": 0.5578635014836796,
+      "probe_median_position": 0.44193548387096776,
+      "probes": 64
+    },
+    {
+      "blocks": 31,
+      "client_id": "Firedancer",
+      "fee_tau_iqr": [
+        -0.05242096412854338,
+        0.06577968353000183
+      ],
+      "median_block_txs": 524,
+      "median_fee_tau": 0.008174411237138243,
+      "outpaid_below_probe": 0.8673647469458988,
+      "probe_median_position": 0.12259059367771781,
+      "probes": 132
+    },
+    {
+      "blocks": 28,
+      "client_id": "HarmonicAgave",
+      "fee_tau_iqr": [
+        -0.049476825247905344,
+        0.05612447561932627
+      ],
+      "median_block_txs": 344,
+      "median_fee_tau": 0.012470838973531868,
+      "outpaid_below_probe": 0.7846153846153846,
+      "probe_median_position": 0.2222222222222222,
+      "probes": 96
+    },
+    {
+      "blocks": 28,
+      "client_id": "HarmonicFiredancer",
+      "fee_tau_iqr": [
+        -0.025210084033613446,
+        0.05747908967127018
+      ],
+      "median_block_txs": 327,
+      "median_fee_tau": 0.013132729822771898,
+      "outpaid_below_probe": 0.734375,
+      "probe_median_position": 0.24029126213592233,
+      "probes": 100
+    },
+    {
+      "blocks": 23,
+      "client_id": "JitoLabs",
+      "fee_tau_iqr": [
+        -0.04672211350293542,
+        0.04400696993289586
+      ],
+      "median_block_txs": 289,
+      "median_fee_tau": 0.0023176435885550544,
+      "outpaid_below_probe": 0.8,
+      "probe_median_position": 0.2264808362369338,
+      "probes": 88
+    }
+  ],
+  "first_slot_of_window": [
     {
       "arrival": {
-        "agree": 56,
-        "p_value": 0.00039996000399960006,
-        "pairs": 75,
-        "q_value": 0.0017998200179982,
-        "tau": 0.49333333333333335
+        "agree": 43,
+        "detectable_tau": 0.42890220413092206,
+        "p_value": 0.0197980201979802,
+        "pairs": 63,
+        "q_value": 0.03563643635636436,
+        "tau": 0.36507936507936506,
+        "tau_ci": [
+          -0.030303030303030304,
+          0.7333333333333333
+        ]
       },
-      "batches": 24,
+      "batches": 35,
       "client_id": "Agave",
-      "groups": 13,
+      "detectable_tau": 0.42890220413092206,
+      "groups": 11,
       "head_to_head": {
-        "agree": 17,
-        "p_value": 0.8895110488951105,
-        "pairs": 36,
-        "q_value": 0.950516713034579,
-        "tau": -0.05555555555555555
+        "agree": 18,
+        "detectable_tau": 0.5429525961758401,
+        "p_value": 1.0,
+        "pairs": 35,
+        "q_value": 1.0,
+        "tau": 0.02857142857142857,
+        "tau_ci": [
+          -0.5555555555555556,
+          0.6
+        ]
       },
       "key": "client Agave",
-      "landed": 52,
-      "landed_in_window": 52,
-      "median_position": 0.2686084142394822,
+      "landed": 76,
+      "landed_in_window": 43,
+      "median_position": 0.2,
       "price": {
-        "agree": 54,
-        "p_value": 0.0014998500149985001,
-        "pairs": 75,
-        "q_value": 0.0038567571814247144,
-        "tau": 0.44
+        "agree": 44,
+        "detectable_tau": 0.42708831743628645,
+        "p_value": 0.0098990100989901,
+        "pairs": 63,
+        "q_value": 0.022272772722727728,
+        "tau": 0.3968253968253968,
+        "tau_ci": [
+          0.07936507936507936,
+          0.7142857142857143
+        ]
       },
-      "sent": 96,
+      "sent": 136,
       "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
     },
     {
       "arrival": {
-        "agree": 14,
-        "p_value": 0.07289271072892711,
-        "pairs": 18,
-        "q_value": 0.1867722318677223,
-        "tau": 0.5555555555555556
-      },
-      "batches": 8,
-      "client_id": "Agave",
-      "groups": 3,
-      "head_to_head": {
-        "agree": 3,
-        "p_value": 1.0,
-        "pairs": 7,
-        "q_value": 1.0,
-        "tau": -0.14285714285714285
-      },
-      "key": "client Agave / burst",
-      "landed": 12,
-      "landed_in_window": 12,
-      "median_position": 0.10032362459546926,
-      "price": {
-        "agree": 13,
-        "p_value": 0.16528347165283472,
-        "pairs": 18,
-        "q_value": 0.3432810565097337,
-        "tau": 0.4444444444444444
-      },
-      "sent": 32,
-      "verdict": "no rule detected: ordering indistinguishable from random"
-    },
-    {
-      "arrival": {
-        "agree": 15,
-        "p_value": 0.40275972402759724,
-        "pairs": 24,
-        "q_value": 0.517833930892625,
-        "tau": 0.25
-      },
-      "batches": 7,
-      "client_id": "Agave",
-      "groups": 4,
-      "head_to_head": {
-        "agree": 9,
-        "p_value": 0.22777722227777222,
+        "agree": 10,
+        "detectable_tau": 0.9577364475763919,
+        "p_value": 0.08949105089491051,
         "pairs": 12,
-        "q_value": 0.36573401483381074,
-        "tau": 0.5
+        "q_value": 0.20135486451354864,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.3333333333333333,
+          1.0
+        ]
       },
-      "key": "client Agave / conflict",
-      "landed": 16,
-      "landed_in_window": 16,
-      "median_position": 0.8,
-      "price": {
-        "agree": 21,
-        "p_value": 0.001999800019998,
-        "pairs": 24,
-        "q_value": 0.011998800119988001,
-        "tau": 0.75
-      },
-      "sent": 28,
-      "verdict": "priority fee decides (loose: 88% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 27,
-        "p_value": 0.0029997000299970002,
-        "pairs": 33,
-        "q_value": 0.012460292432295232,
-        "tau": 0.6363636363636364
-      },
-      "batches": 9,
+      "batches": 12,
       "client_id": "Agave",
-      "groups": 6,
-      "head_to_head": {
-        "agree": 5,
-        "p_value": 0.23027697230276972,
-        "pairs": 17,
-        "q_value": 0.36573401483381074,
-        "tau": -0.4117647058823529
-      },
-      "key": "client Agave / stagger",
-      "landed": 24,
-      "landed_in_window": 24,
-      "median_position": 0.5511363636363636,
-      "price": {
-        "agree": 20,
-        "p_value": 0.38236176382361764,
-        "pairs": 33,
-        "q_value": 0.5035984206457403,
-        "tau": 0.21212121212121213
-      },
-      "sent": 36,
-      "verdict": "arrival order decides (82% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 39,
-        "p_value": 0.26007399260073993,
-        "pairs": 66,
-        "q_value": 0.31208879112088794,
-        "tau": 0.18181818181818182
-      },
-      "batches": 26,
-      "client_id": "AgaveBam",
-      "groups": 11,
-      "head_to_head": {
-        "agree": 23,
-        "p_value": 0.017798220177982202,
-        "pairs": 30,
-        "q_value": 0.04004599540045996,
-        "tau": 0.5333333333333333
-      },
-      "key": "client AgaveBam",
-      "landed": 44,
-      "landed_in_window": 44,
-      "median_position": 0.328125,
-      "price": {
-        "agree": 55,
-        "p_value": 0.00009999000099990002,
-        "pairs": 66,
-        "q_value": 0.0005999400059994001,
-        "tau": 0.6666666666666666
-      },
-      "sent": 90,
-      "verdict": "priority fee decides (loose: 83% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 13,
-        "p_value": 0.21657834216578342,
-        "pairs": 36,
-        "q_value": 0.36573401483381074,
-        "tau": -0.2777777777777778
-      },
-      "batches": 9,
-      "client_id": "AgaveBam",
-      "groups": 6,
-      "head_to_head": {
-        "agree": 19,
-        "p_value": 0.0046995300469953,
-        "pairs": 22,
-        "q_value": 0.016918308169183084,
-        "tau": 0.7272727272727273
-      },
-      "key": "client AgaveBam / burst",
-      "landed": 24,
-      "landed_in_window": 24,
-      "median_position": 0.5570032573289903,
-      "price": {
-        "agree": 29,
-        "p_value": 0.0027997200279972004,
-        "pairs": 36,
-        "q_value": 0.012460292432295232,
-        "tau": 0.6111111111111112
-      },
-      "sent": 32,
-      "verdict": "priority fee decides (loose: 81% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 8,
-        "p_value": 0.47615238476152383,
-        "pairs": 12,
-        "q_value": 0.5979588087702857,
-        "tau": 0.3333333333333333
-      },
-      "batches": 7,
-      "client_id": "AgaveBam",
+      "detectable_tau": 0.9626640323419096,
       "groups": 2,
       "head_to_head": {
-        "agree": 4,
-        "p_value": 0.32996700329967005,
-        "pairs": 4,
-        "q_value": 0.4689004783732153,
-        "tau": 1.0
+        "agree": 1,
+        "detectable_tau": 1.0,
+        "p_value": 0.5008499150084992,
+        "pairs": 5,
+        "q_value": 0.6596559856209502,
+        "tau": -0.6,
+        "tau_ci": [
+          -1.0,
+          0.0
+        ]
       },
-      "key": "client AgaveBam / conflict",
-      "landed": 8,
+      "key": "client Agave / burst",
+      "landed": 16,
       "landed_in_window": 8,
-      "median_position": 0.22527472527472528,
+      "median_position": 0.19877675840978593,
+      "price": {
+        "agree": 7,
+        "detectable_tau": 0.9626640323419096,
+        "p_value": 0.8217178282171783,
+        "pairs": 12,
+        "q_value": 0.9441013345473964,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          0.0,
+          0.3333333333333333
+        ]
+      },
+      "sent": 48,
+      "verdict": "too few blocks (2 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 3,
+        "detectable_tau": 0.9592160185756973,
+        "p_value": 0.23667633236676333,
+        "pairs": 12,
+        "q_value": 0.38225001029308836,
+        "tau": -0.5,
+        "tau_ci": [
+          -0.6666666666666666,
+          -0.3333333333333333
+        ]
+      },
+      "batches": 11,
+      "client_id": "Agave",
+      "detectable_tau": 0.9605635138499578,
+      "groups": 2,
+      "head_to_head": {
+        "agree": 9,
+        "detectable_tau": 1.0,
+        "p_value": 0.023497650234976502,
+        "pairs": 9,
+        "q_value": 0.06344365563443656,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client Agave / conflict",
+      "landed": 24,
+      "landed_in_window": 8,
+      "median_position": 0.23300970873786409,
       "price": {
         "agree": 12,
-        "p_value": 0.0035996400359964,
+        "detectable_tau": 0.9605635138499578,
+        "p_value": 0.0034996500349965005,
         "pairs": 12,
-        "q_value": 0.013884325853128971,
-        "tau": 1.0
-      },
-      "sent": 24,
-      "verdict": "priority fee decides (strict: 100% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 18,
-        "p_value": 0.00009999000099990002,
-        "pairs": 18,
-        "q_value": 0.0017998200179982,
-        "tau": 1.0
-      },
-      "batches": 10,
-      "client_id": "AgaveBam",
-      "groups": 3,
-      "head_to_head": {
-        "agree": 0,
-        "p_value": 0.22277772222777723,
-        "pairs": 4,
-        "q_value": 0.36573401483381074,
-        "tau": -1.0
-      },
-      "key": "client AgaveBam / stagger",
-      "landed": 12,
-      "landed_in_window": 12,
-      "median_position": 0.532258064516129,
-      "price": {
-        "agree": 14,
-        "p_value": 0.0745925407459254,
-        "pairs": 18,
-        "q_value": 0.1867722318677223,
-        "tau": 0.5555555555555556
-      },
-      "sent": 34,
-      "verdict": "arrival order decides (100% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 96,
-        "p_value": 0.00009999000099990002,
-        "pairs": 138,
-        "q_value": 0.0005999400059994001,
-        "tau": 0.391304347826087
-      },
-      "batches": 25,
-      "client_id": "Firedancer",
-      "groups": 23,
-      "head_to_head": {
-        "agree": 33,
-        "p_value": 0.1483851614838516,
-        "pairs": 83,
-        "q_value": 0.22257774222577742,
-        "tau": -0.20481927710843373
-      },
-      "key": "client Firedancer",
-      "landed": 92,
-      "landed_in_window": 92,
-      "median_position": 0.12903225806451613,
-      "price": {
-        "agree": 79,
-        "p_value": 0.1780821917808219,
-        "pairs": 138,
-        "q_value": 0.2465753424657534,
-        "tau": 0.14492753623188406
-      },
-      "sent": 100,
-      "verdict": "arrival order decides (70% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 27,
-        "p_value": 0.5544445555444456,
-        "pairs": 48,
-        "q_value": 0.6653334666533348,
-        "tau": 0.125
-      },
-      "batches": 9,
-      "client_id": "Firedancer",
-      "groups": 8,
-      "head_to_head": {
-        "agree": 15,
-        "p_value": 0.7481251874812519,
-        "pairs": 27,
-        "q_value": 0.8416408359164084,
-        "tau": 0.1111111111111111
-      },
-      "key": "client Firedancer / burst",
-      "landed": 32,
-      "landed_in_window": 32,
-      "median_position": 0.10802469135802469,
-      "price": {
-        "agree": 30,
-        "p_value": 0.18688131186881313,
-        "pairs": 48,
-        "q_value": 0.34798589106606587,
-        "tau": 0.25
-      },
-      "sent": 36,
-      "verdict": "no rule detected: ordering indistinguishable from random"
-    },
-    {
-      "arrival": {
-        "agree": 25,
-        "p_value": 0.0760923907609239,
-        "pairs": 36,
-        "q_value": 0.1867722318677223,
-        "tau": 0.3888888888888889
-      },
-      "batches": 7,
-      "client_id": "Firedancer",
-      "groups": 6,
-      "head_to_head": {
-        "agree": 10,
-        "p_value": 0.5366463353664633,
-        "pairs": 16,
-        "q_value": 0.658611411586114,
-        "tau": 0.25
-      },
-      "key": "client Firedancer / conflict",
-      "landed": 24,
-      "landed_in_window": 24,
-      "median_position": 0.14745762711864407,
-      "price": {
-        "agree": 29,
-        "p_value": 0.0025997400259974,
-        "pairs": 36,
-        "q_value": 0.012460292432295232,
-        "tau": 0.6111111111111112
-      },
-      "sent": 28,
-      "verdict": "priority fee decides (loose: 81% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 44,
-        "p_value": 0.00029997000299970003,
-        "pairs": 54,
-        "q_value": 0.0032396760323967605,
-        "tau": 0.6296296296296297
-      },
-      "batches": 9,
-      "client_id": "Firedancer",
-      "groups": 9,
-      "head_to_head": {
-        "agree": 8,
-        "p_value": 0.0022997700229977,
-        "pairs": 40,
-        "q_value": 0.01241875812418758,
-        "tau": -0.6
-      },
-      "key": "client Firedancer / stagger",
-      "landed": 36,
-      "landed_in_window": 36,
-      "median_position": 0.17338709677419356,
-      "price": {
-        "agree": 20,
-        "p_value": 0.1411858814118588,
-        "pairs": 54,
-        "q_value": 0.304961503849615,
-        "tau": -0.25925925925925924
-      },
-      "sent": 36,
-      "verdict": "arrival order decides (81% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 61,
-        "p_value": 0.08969103089691031,
-        "pairs": 101,
-        "q_value": 0.14676714146767142,
-        "tau": 0.2079207920792079
-      },
-      "batches": 28,
-      "client_id": "HarmonicAgave",
-      "groups": 20,
-      "head_to_head": {
-        "agree": 23,
-        "p_value": 0.8977102289771023,
-        "pairs": 44,
-        "q_value": 0.950516713034579,
-        "tau": 0.045454545454545456
-      },
-      "key": "client HarmonicAgave",
-      "landed": 112,
-      "landed_in_window": 76,
-      "median_position": 0.2222222222222222,
-      "price": {
-        "agree": 63,
-        "p_value": 0.04609539046095391,
-        "pairs": 101,
-        "q_value": 0.09219078092190781,
-        "tau": 0.24752475247524752
-      },
-      "sent": 112,
-      "verdict": "no rule detected: ordering indistinguishable from random"
-    },
-    {
-      "arrival": {
-        "agree": 16,
-        "p_value": 0.25547445255474455,
-        "pairs": 42,
-        "q_value": 0.39416058394160586,
-        "tau": -0.23809523809523808
-      },
-      "batches": 10,
-      "client_id": "HarmonicAgave",
-      "groups": 7,
-      "head_to_head": {
-        "agree": 10,
-        "p_value": 0.37776222377762225,
-        "pairs": 15,
-        "q_value": 0.5035984206457403,
-        "tau": 0.3333333333333333
-      },
-      "key": "client HarmonicAgave / burst",
-      "landed": 40,
-      "landed_in_window": 28,
-      "median_position": 0.043209876543209874,
-      "price": {
-        "agree": 21,
-        "p_value": 1.0,
-        "pairs": 42,
-        "q_value": 1.0,
-        "tau": 0.0
+        "q_value": 0.02024797520247975,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
       },
       "sent": 40,
-      "verdict": "no rule detected: ordering indistinguishable from random"
+      "verdict": "too few blocks (2 blocks): not judged"
     },
     {
       "arrival": {
-        "agree": 10,
-        "p_value": 0.8437156284371563,
-        "pairs": 18,
-        "q_value": 0.9298090599103356,
-        "tau": 0.1111111111111111
+        "agree": 30,
+        "detectable_tau": 0.5448110514492317,
+        "p_value": 0.0051994800519948,
+        "pairs": 39,
+        "q_value": 0.021212164497835934,
+        "tau": 0.5384615384615384,
+        "tau_ci": [
+          0.07692307692307693,
+          0.8974358974358975
+        ]
       },
-      "batches": 8,
-      "client_id": "HarmonicAgave",
-      "groups": 3,
+      "batches": 12,
+      "client_id": "Agave",
+      "detectable_tau": 0.5457711083750056,
+      "groups": 7,
       "head_to_head": {
         "agree": 8,
-        "p_value": 0.20177982201779823,
-        "pairs": 10,
-        "q_value": 0.36320367963203687,
-        "tau": 0.6
+        "detectable_tau": 0.74047759522254,
+        "p_value": 0.46855314468553144,
+        "pairs": 21,
+        "q_value": 0.6487658926415051,
+        "tau": -0.23809523809523808,
+        "tau_ci": [
+          -0.8181818181818182,
+          0.5
+        ]
       },
-      "key": "client HarmonicAgave / conflict",
-      "landed": 32,
-      "landed_in_window": 12,
-      "median_position": 0.11073825503355705,
+      "key": "client Agave / stagger",
+      "landed": 36,
+      "landed_in_window": 27,
+      "median_position": 0.22469135802469137,
       "price": {
-        "agree": 16,
-        "p_value": 0.007499250074992501,
-        "pairs": 18,
-        "q_value": 0.023821147297035,
-        "tau": 0.7777777777777778
+        "agree": 25,
+        "detectable_tau": 0.5457711083750056,
+        "p_value": 0.18118188181181882,
+        "pairs": 39,
+        "q_value": 0.3373731592358005,
+        "tau": 0.28205128205128205,
+        "tau_ci": [
+          -0.16666666666666666,
+          0.6923076923076923
+        ]
       },
-      "sent": 32,
+      "sent": 48,
+      "verdict": "arrival order decides (77% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 32,
+        "detectable_tau": 0.471234145744145,
+        "p_value": 0.30656934306569344,
+        "pairs": 54,
+        "q_value": 0.4244806288601909,
+        "tau": 0.18518518518518517,
+        "tau_ci": [
+          -0.25925925925925924,
+          0.5925925925925926
+        ]
+      },
+      "batches": 38,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.4713411069813168,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 19,
+        "detectable_tau": 0.6647073112589432,
+        "p_value": 0.0044995500449955,
+        "pairs": 22,
+        "q_value": 0.0134986501349865,
+        "tau": 0.7272727272727273,
+        "tau_ci": [
+          0.16666666666666666,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam",
+      "landed": 64,
+      "landed_in_window": 36,
+      "median_position": 0.22802197802197802,
+      "price": {
+        "agree": 48,
+        "detectable_tau": 0.4713411069813168,
+        "p_value": 0.00009999000099990002,
+        "pairs": 54,
+        "q_value": 0.0017998200179982003,
+        "tau": 0.7777777777777778,
+        "tau_ci": [
+          0.5185185185185185,
+          0.9629629629629629
+        ]
+      },
+      "sent": 134,
       "verdict": "priority fee decides (loose: 89% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 35,
-        "p_value": 0.00039996000399960006,
-        "pairs": 41,
-        "q_value": 0.0035996400359964,
-        "tau": 0.7073170731707317
+        "agree": 12,
+        "detectable_tau": 0.7060702808316756,
+        "p_value": 1.0,
+        "pairs": 24,
+        "q_value": 1.0,
+        "tau": 0.0,
+        "tau_ci": [
+          -0.6666666666666666,
+          0.6666666666666666
+        ]
       },
-      "batches": 10,
-      "client_id": "HarmonicAgave",
-      "groups": 10,
+      "batches": 13,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.7080256859962214,
+      "groups": 4,
       "head_to_head": {
-        "agree": 5,
-        "p_value": 0.1171882811718828,
-        "pairs": 19,
-        "q_value": 0.2677232276772323,
-        "tau": -0.47368421052631576
+        "agree": 9,
+        "detectable_tau": 0.9423687662893913,
+        "p_value": 0.20667933206679331,
+        "pairs": 12,
+        "q_value": 0.360022062309898,
+        "tau": 0.5,
+        "tau_ci": [
+          -0.5,
+          1.0
+        ]
       },
-      "key": "client HarmonicAgave / stagger",
-      "landed": 40,
-      "landed_in_window": 36,
-      "median_position": 0.5925925925925926,
+      "key": "client AgaveBam / burst",
+      "landed": 28,
+      "landed_in_window": 16,
+      "median_position": 0.25882352941176473,
       "price": {
-        "agree": 26,
-        "p_value": 0.1852814718528147,
-        "pairs": 41,
-        "q_value": 0.34798589106606587,
-        "tau": 0.2682926829268293
+        "agree": 18,
+        "detectable_tau": 0.7080256859962214,
+        "p_value": 0.06379362063793621,
+        "pairs": 24,
+        "q_value": 0.15658434156584342,
+        "tau": 0.5,
+        "tau_ci": [
+          0.16666666666666666,
+          0.8333333333333334
+        ]
+      },
+      "sent": 48,
+      "verdict": "no rule detected (this cell could detect tau of ±0.71 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 11,
+        "detectable_tau": 0.7964285495937347,
+        "p_value": 0.5776422357764224,
+        "pairs": 18,
+        "q_value": 0.7089245620892456,
+        "tau": 0.2222222222222222,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
+      },
+      "batches": 11,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.7964285495937347,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 7,
+        "detectable_tau": 1.0,
+        "p_value": 0.08549145085491451,
+        "pairs": 7,
+        "q_value": 0.20071905852892974,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam / conflict",
+      "landed": 20,
+      "landed_in_window": 12,
+      "median_position": 0.23076923076923078,
+      "price": {
+        "agree": 18,
+        "detectable_tau": 0.7946606088373973,
+        "p_value": 0.00039996000399960006,
+        "pairs": 18,
+        "q_value": 0.0030854057451397718,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
       },
       "sent": 40,
-      "verdict": "arrival order decides (85% of pairs follow it)"
+      "verdict": "too few blocks (3 blocks): not judged"
     },
     {
       "arrival": {
-        "agree": 60,
-        "p_value": 0.2506749325067493,
-        "pairs": 105,
-        "q_value": 0.31208879112088794,
-        "tau": 0.14285714285714285
+        "agree": 9,
+        "detectable_tau": 0.961239763274566,
+        "p_value": 0.24067593240675933,
+        "pairs": 12,
+        "q_value": 0.38225001029308836,
+        "tau": 0.5,
+        "tau_ci": [
+          0.0,
+          1.0
+        ]
       },
-      "batches": 27,
-      "client_id": "HarmonicFiredancer",
-      "groups": 19,
+      "batches": 14,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.961239763274566,
+      "groups": 2,
       "head_to_head": {
-        "agree": 35,
-        "p_value": 0.07889211078892111,
-        "pairs": 54,
-        "q_value": 0.142005799420058,
-        "tau": 0.2962962962962963
+        "agree": 3,
+        "detectable_tau": 1.0,
+        "p_value": 0.33656634336566343,
+        "pairs": 3,
+        "q_value": 0.47827848794067956,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
       },
-      "key": "client HarmonicFiredancer",
-      "landed": 108,
-      "landed_in_window": 76,
-      "median_position": 0.3460620525059666,
+      "key": "client AgaveBam / stagger",
+      "landed": 16,
+      "landed_in_window": 8,
+      "median_position": 0.20995670995670995,
       "price": {
-        "agree": 76,
-        "p_value": 0.00009999000099990002,
-        "pairs": 105,
-        "q_value": 0.0005999400059994001,
-        "tau": 0.44761904761904764
+        "agree": 12,
+        "detectable_tau": 0.9582274729934361,
+        "p_value": 0.0037996200379962005,
+        "pairs": 12,
+        "q_value": 0.02024797520247975,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
       },
-      "sent": 108,
-      "verdict": "priority fee decides (loose: 72% of pairs follow it)"
+      "sent": 46,
+      "verdict": "too few blocks (2 blocks): not judged"
     },
     {
       "arrival": {
-        "agree": 25,
-        "p_value": 0.9064093590640936,
-        "pairs": 48,
-        "q_value": 0.9789221077892211,
-        "tau": 0.041666666666666664
+        "agree": 94,
+        "detectable_tau": 0.2772744990560069,
+        "p_value": 0.0020997900209979003,
+        "pairs": 144,
+        "q_value": 0.009449055094490552,
+        "tau": 0.3055555555555556,
+        "tau_ci": [
+          0.041666666666666664,
+          0.5416666666666666
+        ]
       },
-      "batches": 10,
-      "client_id": "HarmonicFiredancer",
+      "batches": 37,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.2791991392713556,
+      "groups": 24,
+      "head_to_head": {
+        "agree": 41,
+        "detectable_tau": 0.3746111165112812,
+        "p_value": 0.9303069693030697,
+        "pairs": 84,
+        "q_value": 1.0,
+        "tau": -0.023809523809523808,
+        "tau_ci": [
+          -0.4117647058823529,
+          0.3707865168539326
+        ]
+      },
+      "key": "client Firedancer",
+      "landed": 132,
+      "landed_in_window": 96,
+      "median_position": 0.11049723756906077,
+      "price": {
+        "agree": 92,
+        "detectable_tau": 0.2791991392713556,
+        "p_value": 0.007499250074992501,
+        "pairs": 144,
+        "q_value": 0.019283785907123572,
+        "tau": 0.2777777777777778,
+        "tau_ci": [
+          0.0,
+          0.5555555555555556
+        ]
+      },
+      "sent": 148,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 27,
+        "detectable_tau": 0.4799555630629107,
+        "p_value": 0.5417458254174583,
+        "pairs": 48,
+        "q_value": 0.6965303469653035,
+        "tau": 0.125,
+        "tau_ci": [
+          -0.2916666666666667,
+          0.5833333333333334
+        ]
+      },
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.4799555630629107,
       "groups": 8,
       "head_to_head": {
-        "agree": 13,
-        "p_value": 0.3411658834116588,
-        "pairs": 20,
-        "q_value": 0.4723835308776815,
-        "tau": 0.3
+        "agree": 19,
+        "detectable_tau": 0.6371262462859587,
+        "p_value": 0.22137786221377861,
+        "pairs": 29,
+        "q_value": 0.3735751424857514,
+        "tau": 0.3103448275862069,
+        "tau_ci": [
+          -0.4117647058823529,
+          0.8787878787878788
+        ]
       },
-      "key": "client HarmonicFiredancer / burst",
-      "landed": 40,
+      "key": "client Firedancer / burst",
+      "landed": 44,
       "landed_in_window": 32,
-      "median_position": 0.3282051282051282,
+      "median_position": 0.07360861759425494,
       "price": {
-        "agree": 31,
-        "p_value": 0.11898810118988101,
+        "agree": 36,
+        "detectable_tau": 0.47875480101471424,
+        "p_value": 0.006099390060993901,
         "pairs": 48,
-        "q_value": 0.2677232276772323,
-        "tau": 0.2916666666666667
+        "q_value": 0.02195780421957804,
+        "tau": 0.5,
+        "tau_ci": [
+          -0.08333333333333333,
+          0.9166666666666666
+        ]
       },
-      "sent": 40,
-      "verdict": "no rule detected: ordering indistinguishable from random"
+      "sent": 52,
+      "verdict": "priority fee decides (loose: 75% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 14,
-        "p_value": 0.3274672532746725,
-        "pairs": 36,
-        "q_value": 0.4689004783732153,
-        "tau": -0.2222222222222222
-      },
-      "batches": 8,
-      "client_id": "HarmonicFiredancer",
-      "groups": 6,
-      "head_to_head": {
         "agree": 22,
-        "p_value": 0.00019998000199980003,
-        "pairs": 23,
-        "q_value": 0.0026997300269973002,
-        "tau": 0.9130434782608695
+        "detectable_tau": 0.537098715201005,
+        "p_value": 0.9012098790120988,
+        "pairs": 42,
+        "q_value": 0.9733066693330668,
+        "tau": 0.047619047619047616,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.47619047619047616
+        ]
       },
-      "key": "client HarmonicFiredancer / conflict",
-      "landed": 32,
-      "landed_in_window": 24,
-      "median_position": 0.3460620525059666,
+      "batches": 11,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.537098715201005,
+      "groups": 7,
+      "head_to_head": {
+        "agree": 15,
+        "detectable_tau": 0.7304342873468298,
+        "p_value": 0.100989901009899,
+        "pairs": 20,
+        "q_value": 0.21813818618138187,
+        "tau": 0.5,
+        "tau_ci": [
+          0.0,
+          0.8518518518518519
+        ]
+      },
+      "key": "client Firedancer / conflict",
+      "landed": 36,
+      "landed_in_window": 28,
+      "median_position": 0.11410788381742738,
       "price": {
-        "agree": 35,
-        "p_value": 0.00009999000099990002,
-        "pairs": 36,
-        "q_value": 0.0017998200179982,
-        "tau": 0.9444444444444444
+        "agree": 32,
+        "detectable_tau": 0.5361336509608807,
+        "p_value": 0.0044995500449955,
+        "pairs": 42,
+        "q_value": 0.02024797520247975,
+        "tau": 0.5238095238095238,
+        "tau_ci": [
+          0.14285714285714285,
+          0.8571428571428571
+        ]
       },
-      "sent": 32,
-      "verdict": "priority fee decides (strict: 97% of pairs follow it)"
+      "sent": 44,
+      "verdict": "priority fee decides (loose: 76% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 21,
+        "agree": 45,
+        "detectable_tau": 0.4705104285349904,
         "p_value": 0.00009999000099990002,
-        "pairs": 21,
-        "q_value": 0.0017998200179982,
-        "tau": 1.0
+        "pairs": 54,
+        "q_value": 0.0013498650134986501,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.2962962962962963,
+          0.9629629629629629
+        ]
       },
-      "batches": 9,
-      "client_id": "HarmonicFiredancer",
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.4712422856917702,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 7,
+        "detectable_tau": 0.5410232772564576,
+        "p_value": 0.004299570042995701,
+        "pairs": 35,
+        "q_value": 0.02024797520247975,
+        "tau": -0.6,
+        "tau_ci": [
+          -0.9487179487179487,
+          -0.08571428571428572
+        ]
+      },
+      "key": "client Firedancer / stagger",
+      "landed": 52,
+      "landed_in_window": 36,
+      "median_position": 0.15008726003490402,
+      "price": {
+        "agree": 24,
+        "detectable_tau": 0.4712422856917702,
+        "p_value": 0.5665433456654334,
+        "pairs": 54,
+        "q_value": 0.7089245620892456,
+        "tau": -0.1111111111111111,
+        "tau_ci": [
+          -0.4444444444444444,
+          0.2962962962962963
+        ]
+      },
+      "sent": 52,
+      "verdict": "arrival order decides (83% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 56,
+        "detectable_tau": 0.3709281405957946,
+        "p_value": 0.012998700129987,
+        "pairs": 84,
+        "q_value": 0.025997400259974,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          -0.053763440860215055,
+          0.6888888888888889
+        ]
+      },
+      "batches": 39,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.3709281405957946,
+      "groups": 16,
+      "head_to_head": {
+        "agree": 13,
+        "detectable_tau": 0.5385053493590782,
+        "p_value": 0.25817418258174185,
+        "pairs": 35,
+        "q_value": 0.38726127387261283,
+        "tau": -0.2571428571428571,
+        "tau_ci": [
+          -0.8,
+          0.25925925925925924
+        ]
+      },
+      "key": "client HarmonicAgave",
+      "landed": 156,
+      "landed_in_window": 60,
+      "median_position": 0.4295942720763723,
+      "price": {
+        "agree": 47,
+        "detectable_tau": 0.3703868077159054,
+        "p_value": 0.40445955404459555,
+        "pairs": 84,
+        "q_value": 0.5200194266287658,
+        "tau": 0.11904761904761904,
+        "tau_ci": [
+          -0.13978494623655913,
+          0.38271604938271603
+        ]
+      },
+      "sent": 156,
+      "verdict": "arrival order decides (67% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 10,
+        "detectable_tau": 0.5824485413808999,
+        "p_value": 0.1683831616838316,
+        "pairs": 30,
+        "q_value": 0.324738954675961,
+        "tau": -0.3333333333333333,
+        "tau_ci": [
+          -0.6666666666666666,
+          -0.06666666666666667
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.5857266245766096,
       "groups": 5,
       "head_to_head": {
-        "agree": 0,
-        "p_value": 0.006799320067993201,
-        "pairs": 11,
-        "q_value": 0.02294770522947705,
-        "tau": -1.0
-      },
-      "key": "client HarmonicFiredancer / stagger",
-      "landed": 36,
-      "landed_in_window": 20,
-      "median_position": 0.3767605633802817,
-      "price": {
-        "agree": 10,
+        "agree": 5,
+        "detectable_tau": 1.0,
         "p_value": 1.0,
-        "pairs": 21,
+        "pairs": 9,
         "q_value": 1.0,
-        "tau": -0.047619047619047616
+        "tau": 0.1111111111111111,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
       },
-      "sent": 36,
+      "key": "client HarmonicAgave / burst",
+      "landed": 56,
+      "landed_in_window": 20,
+      "median_position": 0.043209876543209874,
+      "price": {
+        "agree": 11,
+        "detectable_tau": 0.5857266245766096,
+        "p_value": 0.29177082291770823,
+        "pairs": 30,
+        "q_value": 0.4501606982158927,
+        "tau": -0.26666666666666666,
+        "tau_ci": [
+          -0.4666666666666667,
+          -0.06666666666666667
+        ]
+      },
+      "sent": 56,
+      "verdict": "no rule detected (this cell could detect tau of ±0.59 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 10,
+        "detectable_tau": 0.7935400126000458,
+        "p_value": 0.8496150384961504,
+        "pairs": 18,
+        "q_value": 0.9558169183081692,
+        "tau": 0.1111111111111111,
+        "tau_ci": [
+          -0.6666666666666666,
+          1.0
+        ]
+      },
+      "batches": 11,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.7944413759361054,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 1.0,
+        "p_value": 0.19538046195380462,
+        "pairs": 10,
+        "q_value": 0.3516848315168483,
+        "tau": 0.6,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "key": "client HarmonicAgave / conflict",
+      "landed": 44,
+      "landed_in_window": 12,
+      "median_position": 0.11073825503355705,
+      "price": {
+        "agree": 16,
+        "detectable_tau": 0.7944413759361054,
+        "p_value": 0.008999100089991,
+        "pairs": 18,
+        "q_value": 0.026997300269973,
+        "tau": 0.7777777777777778,
+        "tau_ci": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "sent": 44,
+      "verdict": "too few blocks (3 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 36,
+        "detectable_tau": 0.5532961652527005,
+        "p_value": 0.00009999000099990002,
+        "pairs": 36,
+        "q_value": 0.0013498650134986501,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.5540395433280905,
+      "groups": 8,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 0.8755584899721485,
+        "p_value": 0.00029997000299970003,
+        "pairs": 16,
+        "q_value": 0.0030854057451397718,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client HarmonicAgave / stagger",
+      "landed": 56,
+      "landed_in_window": 28,
+      "median_position": 0.6865203761755486,
+      "price": {
+        "agree": 20,
+        "detectable_tau": 0.5540395433280905,
+        "p_value": 0.6726327367263274,
+        "pairs": 36,
+        "q_value": 0.8071592840715929,
+        "tau": 0.1111111111111111,
+        "tau_ci": [
+          -0.2727272727272727,
+          0.5555555555555556
+        ]
+      },
+      "sent": 56,
       "verdict": "arrival order decides (100% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 81,
-        "p_value": 0.0004999500049995,
-        "pairs": 116,
-        "q_value": 0.0017998200179982,
-        "tau": 0.39655172413793105
+        "agree": 46,
+        "detectable_tau": 0.39670646609494187,
+        "p_value": 0.06129387061293871,
+        "pairs": 72,
+        "q_value": 0.10029906100299062,
+        "tau": 0.2777777777777778,
+        "tau_ci": [
+          -0.10144927536231885,
+          0.6388888888888888
+        ]
       },
-      "batches": 28,
-      "client_id": "JitoLabs",
-      "groups": 21,
+      "batches": 38,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.3969269984857041,
+      "groups": 13,
       "head_to_head": {
+        "agree": 19,
+        "detectable_tau": 0.5667600234756105,
+        "p_value": 0.5555444455554445,
+        "pairs": 33,
+        "q_value": 0.6666533346665333,
+        "tau": 0.15151515151515152,
+        "tau_ci": [
+          -0.4482758620689655,
+          0.627906976744186
+        ]
+      },
+      "key": "client HarmonicFiredancer",
+      "landed": 148,
+      "landed_in_window": 51,
+      "median_position": 0.34844868735083534,
+      "price": {
+        "agree": 51,
+        "detectable_tau": 0.3969269984857041,
+        "p_value": 0.0033996600339966003,
+        "pairs": 72,
+        "q_value": 0.012238776122387761,
+        "tau": 0.4166666666666667,
+        "tau_ci": [
+          0.12121212121212122,
+          0.68
+        ]
+      },
+      "sent": 152,
+      "verdict": "priority fee decides (loose: 71% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 22,
+        "detectable_tau": 0.5583556496051814,
+        "p_value": 0.3331666833316668,
+        "pairs": 36,
+        "q_value": 0.47827848794067956,
+        "tau": 0.2222222222222222,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.6111111111111112
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.5583556496051814,
+      "groups": 6,
+      "head_to_head": {
+        "agree": 7,
+        "detectable_tau": 0.9337178883200956,
+        "p_value": 0.7996200379962004,
+        "pairs": 12,
+        "q_value": 0.9386843924303222,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.5,
+          0.6923076923076923
+        ]
+      },
+      "key": "client HarmonicFiredancer / burst",
+      "landed": 52,
+      "landed_in_window": 24,
+      "median_position": 0.19696969696969696,
+      "price": {
         "agree": 24,
+        "detectable_tau": 0.5569369131394214,
+        "p_value": 0.1250874912508749,
+        "pairs": 36,
+        "q_value": 0.2521747825217478,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          0.0,
+          0.6666666666666666
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.56 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 6,
+        "detectable_tau": 0.7937922464288841,
+        "p_value": 0.3320667933206679,
+        "pairs": 18,
+        "q_value": 0.47827848794067956,
+        "tau": -0.3333333333333333,
+        "tau_ci": [
+          -0.6666666666666666,
+          0.3333333333333333
+        ]
+      },
+      "batches": 12,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.7937922464288841,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 12,
+        "detectable_tau": 0.9626369378827204,
+        "p_value": 0.005499450054994501,
+        "pairs": 12,
+        "q_value": 0.021212164497835934,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / conflict",
+      "landed": 48,
+      "landed_in_window": 12,
+      "median_position": 0.35083532219570407,
+      "price": {
+        "agree": 18,
+        "detectable_tau": 0.7937257811407425,
+        "p_value": 0.00039996000399960006,
+        "pairs": 18,
+        "q_value": 0.0030854057451397718,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sent": 48,
+      "verdict": "too few blocks (3 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 18,
+        "detectable_tau": 0.7897396413696759,
+        "p_value": 0.00009999000099990002,
+        "pairs": 18,
+        "q_value": 0.0013498650134986501,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.7897396413696759,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 1.0,
+        "p_value": 0.018598140185981403,
+        "pairs": 9,
+        "q_value": 0.05285787210752609,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / stagger",
+      "landed": 48,
+      "landed_in_window": 15,
+      "median_position": 0.47232472324723246,
+      "price": {
+        "agree": 9,
+        "detectable_tau": 0.7841751641427068,
         "p_value": 1.0,
-        "pairs": 49,
+        "pairs": 18,
         "q_value": 1.0,
-        "tau": -0.02040816326530612
+        "tau": 0.0,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.5238095238095238
+        ]
+      },
+      "sent": 52,
+      "verdict": "arrival order decides (100% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 51,
+        "detectable_tau": 0.4074881930871717,
+        "p_value": 0.00029997000299970003,
+        "pairs": 67,
+        "q_value": 0.0026997300269973002,
+        "tau": 0.5223880597014925,
+        "tau_ci": [
+          0.2777777777777778,
+          0.7741935483870968
+        ]
+      },
+      "batches": 38,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.4074881930871717,
+      "groups": 12,
+      "head_to_head": {
+        "agree": 13,
+        "detectable_tau": 0.6750722580025471,
+        "p_value": 1.0,
+        "pairs": 27,
+        "q_value": 1.0,
+        "tau": -0.037037037037037035,
+        "tau_ci": [
+          -0.5555555555555556,
+          0.52
+        ]
       },
       "key": "client JitoLabs",
-      "landed": 80,
-      "landed_in_window": 80,
-      "median_position": 0.17682926829268292,
+      "landed": 88,
+      "landed_in_window": 46,
+      "median_position": 0.15548780487804878,
       "price": {
-        "agree": 80,
-        "p_value": 0.0007999200079992001,
-        "pairs": 116,
-        "q_value": 0.0023997600239976003,
-        "tau": 0.3793103448275862
+        "agree": 50,
+        "detectable_tau": 0.4063282565080908,
+        "p_value": 0.000999900009999,
+        "pairs": 67,
+        "q_value": 0.0059994000599940004,
+        "tau": 0.4925373134328358,
+        "tau_ci": [
+          0.19402985074626866,
+          0.7741935483870968
+        ]
       },
-      "sent": 104,
+      "sent": 136,
       "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 13,
+        "detectable_tau": 0.7073036034569837,
+        "p_value": 0.869013098690131,
+        "pairs": 24,
+        "q_value": 0.9576879046789198,
+        "tau": 0.08333333333333333,
+        "tau_ci": [
+          -0.16666666666666666,
+          0.3333333333333333
+        ]
+      },
+      "batches": 13,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.7073036034569837,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 9,
+        "detectable_tau": 0.9394613695571792,
+        "p_value": 0.1260873912608739,
+        "pairs": 11,
+        "q_value": 0.2521747825217478,
+        "tau": 0.6363636363636364,
+        "tau_ci": [
+          0.25,
+          1.0
+        ]
+      },
+      "key": "client JitoLabs / burst",
+      "landed": 32,
+      "landed_in_window": 16,
+      "median_position": 0.14939024390243902,
+      "price": {
+        "agree": 20,
+        "detectable_tau": 0.7056294233800905,
+        "p_value": 0.007099290070992901,
+        "pairs": 24,
+        "q_value": 0.02396010398960104,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.4166666666666667,
+          0.9166666666666666
+        ]
+      },
+      "sent": 52,
+      "verdict": "priority fee decides (loose: 83% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 16,
+        "detectable_tau": 0.7936460021594127,
+        "p_value": 0.0086991300869913,
+        "pairs": 18,
+        "q_value": 0.026997300269973,
+        "tau": 0.7777777777777778,
+        "tau_ci": [
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "batches": 12,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.7937798754499926,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 2,
+        "detectable_tau": 1.0,
+        "p_value": 0.4904509549045096,
+        "pairs": 2,
+        "q_value": 0.6596559856209502,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client JitoLabs / conflict",
+      "landed": 28,
+      "landed_in_window": 12,
+      "median_position": 0.11504424778761062,
+      "price": {
+        "agree": 18,
+        "detectable_tau": 0.7937798754499926,
+        "p_value": 0.00009999000099990002,
+        "pairs": 18,
+        "q_value": 0.0013498650134986501,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sent": 44,
+      "verdict": "too few blocks (3 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 22,
+        "detectable_tau": 0.6395231798607643,
+        "p_value": 0.0014998500149985001,
+        "pairs": 25,
+        "q_value": 0.010123987601239877,
+        "tau": 0.76,
+        "tau_ci": [
+          0.5,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.6395231798607643,
+      "groups": 5,
+      "head_to_head": {
+        "agree": 2,
+        "detectable_tau": 0.8482582026360199,
+        "p_value": 0.0430956904309569,
+        "pairs": 14,
+        "q_value": 0.11081748967960345,
+        "tau": -0.7142857142857143,
+        "tau_ci": [
+          -1.0,
+          -0.29411764705882354
+        ]
+      },
+      "key": "client JitoLabs / stagger",
+      "landed": 28,
+      "landed_in_window": 18,
+      "median_position": 0.38571428571428573,
+      "price": {
+        "agree": 12,
+        "detectable_tau": 0.639421487073014,
+        "p_value": 1.0,
+        "pairs": 25,
+        "q_value": 1.0,
+        "tau": -0.04,
+        "tau_ci": [
+          -0.28,
+          0.3
+        ]
+      },
+      "sent": 40,
+      "verdict": "arrival order decides (88% of pairs follow it)"
+    }
+  ],
+  "in_window_only": [
+    {
+      "arrival": {
+        "agree": 88,
+        "detectable_tau": 0.3211181140313448,
+        "p_value": 0.00009999000099990002,
+        "pairs": 111,
+        "q_value": 0.00035996400359964006,
+        "tau": 0.5855855855855856,
+        "tau_ci": [
+          0.3157894736842105,
+          0.8245614035087719
+        ]
+      },
+      "batches": 35,
+      "client_id": "Agave",
+      "detectable_tau": 0.3211181140313448,
+      "groups": 19,
+      "head_to_head": {
+        "agree": 20,
+        "detectable_tau": 0.47015633213337216,
+        "p_value": 0.13888611138886112,
+        "pairs": 54,
+        "q_value": 0.2029643189527201,
+        "tau": -0.25925925925925924,
+        "tau_ci": [
+          -0.7,
+          0.23809523809523808
+        ]
+      },
+      "key": "client Agave",
+      "landed": 76,
+      "landed_in_window": 76,
+      "median_position": 0.26099706744868034,
+      "price": {
+        "agree": 74,
+        "detectable_tau": 0.3197934419308741,
+        "p_value": 0.0036996300369963003,
+        "pairs": 111,
+        "q_value": 0.008324167583241676,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          0.08771929824561403,
+          0.5614035087719298
+        ]
+      },
+      "sent": 136,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 20,
+        "detectable_tau": 0.7065986090587073,
+        "p_value": 0.009599040095990401,
+        "pairs": 24,
+        "q_value": 0.024683245961118178,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "batches": 12,
+      "client_id": "Agave",
+      "detectable_tau": 0.7065986090587073,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 3,
+        "detectable_tau": 0.9485337545488415,
+        "p_value": 0.3421657834216578,
+        "pairs": 11,
+        "q_value": 0.486235586967619,
+        "tau": -0.45454545454545453,
+        "tau_ci": [
+          -1.0,
+          0.5
+        ]
+      },
+      "key": "client Agave / burst",
+      "landed": 16,
+      "landed_in_window": 16,
+      "median_position": 0.19877675840978593,
+      "price": {
+        "agree": 15,
+        "detectable_tau": 0.7047477251484584,
+        "p_value": 0.39986001399860016,
+        "pairs": 24,
+        "q_value": 0.5266448964859611,
+        "tau": 0.25,
+        "tau_ci": [
+          -0.16666666666666666,
+          0.75
+        ]
+      },
+      "sent": 48,
+      "verdict": "arrival order decides (83% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 26,
+        "detectable_tau": 0.5551157455557341,
+        "p_value": 0.035596440355964404,
+        "pairs": 36,
+        "q_value": 0.07393106843161837,
+        "tau": 0.4444444444444444,
+        "tau_ci": [
+          -0.1111111111111111,
+          0.9444444444444444
+        ]
+      },
+      "batches": 11,
+      "client_id": "Agave",
+      "detectable_tau": 0.5575120010764085,
+      "groups": 6,
+      "head_to_head": {
+        "agree": 9,
+        "detectable_tau": 0.7741734193009153,
+        "p_value": 1.0,
+        "pairs": 17,
+        "q_value": 1.0,
+        "tau": 0.058823529411764705,
+        "tau_ci": [
+          -1.0,
+          0.8
+        ]
+      },
+      "key": "client Agave / conflict",
+      "landed": 24,
+      "landed_in_window": 24,
+      "median_position": 0.5608695652173913,
+      "price": {
+        "agree": 27,
+        "detectable_tau": 0.5575120010764085,
+        "p_value": 0.014898510148985102,
+        "pairs": 36,
+        "q_value": 0.03656907036569071,
+        "tau": 0.5,
+        "tau_ci": [
+          0.1111111111111111,
+          0.8333333333333334
+        ]
+      },
+      "sent": 40,
+      "verdict": "priority fee decides (loose: 75% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 42,
+        "detectable_tau": 0.47604431281684784,
+        "p_value": 0.00019998000199980003,
+        "pairs": 51,
+        "q_value": 0.0011998800119988001,
+        "tau": 0.6470588235294118,
+        "tau_ci": [
+          0.2549019607843137,
+          0.9259259259259259
+        ]
+      },
+      "batches": 12,
+      "client_id": "Agave",
+      "detectable_tau": 0.47621526418324933,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 0.6540146110405595,
+        "p_value": 0.12818718128187181,
+        "pairs": 26,
+        "q_value": 0.2472181353293242,
+        "tau": -0.38461538461538464,
+        "tau_ci": [
+          -0.8620689655172413,
+          0.28
+        ]
+      },
+      "key": "client Agave / stagger",
+      "landed": 36,
+      "landed_in_window": 36,
+      "median_position": 0.3150684931506849,
+      "price": {
+        "agree": 32,
+        "detectable_tau": 0.47621526418324933,
+        "p_value": 0.16568343165683433,
+        "pairs": 51,
+        "q_value": 0.2982301769823018,
+        "tau": 0.2549019607843137,
+        "tau_ci": [
+          -0.13725490196078433,
+          0.625
+        ]
+      },
+      "sent": 48,
+      "verdict": "arrival order decides (82% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 54,
+        "detectable_tau": 0.3535444913454898,
+        "p_value": 0.35176482351764826,
+        "pairs": 96,
+        "q_value": 0.35176482351764826,
+        "tau": 0.125,
+        "tau_ci": [
+          -0.1875,
+          0.4375
+        ]
+      },
+      "batches": 38,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.3535444913454898,
+      "groups": 16,
+      "head_to_head": {
+        "agree": 38,
+        "detectable_tau": 0.49539025093958233,
+        "p_value": 0.00019998000199980003,
+        "pairs": 46,
+        "q_value": 0.0005999400059994001,
+        "tau": 0.6521739130434783,
+        "tau_ci": [
+          0.26666666666666666,
+          0.9111111111111111
+        ]
+      },
+      "key": "client AgaveBam",
+      "landed": 64,
+      "landed_in_window": 64,
+      "median_position": 0.44193548387096776,
+      "price": {
+        "agree": 84,
+        "detectable_tau": 0.3326383390850743,
+        "p_value": 0.00009999000099990002,
+        "pairs": 96,
+        "q_value": 0.00035996400359964006,
+        "tau": 0.75,
+        "tau_ci": [
+          0.5833333333333334,
+          0.8958333333333334
+        ]
+      },
+      "sent": 134,
+      "verdict": "priority fee decides (loose: 88% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 18,
+        "detectable_tau": 0.5365000438580502,
+        "p_value": 0.5186481351864813,
+        "pairs": 42,
+        "q_value": 0.6513255651179068,
+        "tau": -0.14285714285714285,
+        "tau_ci": [
+          -0.5714285714285714,
+          0.2857142857142857
+        ]
+      },
+      "batches": 13,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.5365000438580502,
+      "groups": 7,
+      "head_to_head": {
+        "agree": 20,
+        "detectable_tau": 0.6132129676798443,
+        "p_value": 0.0053994600539946005,
+        "pairs": 24,
+        "q_value": 0.018223177682231778,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.15789473684210525,
+          0.9444444444444444
+        ]
+      },
+      "key": "client AgaveBam / burst",
+      "landed": 28,
+      "landed_in_window": 28,
+      "median_position": 0.31746031746031744,
+      "price": {
+        "agree": 34,
+        "detectable_tau": 0.5363509642192217,
+        "p_value": 0.000999900009999,
+        "pairs": 42,
+        "q_value": 0.0044995500449955,
+        "tau": 0.6190476190476191,
+        "tau_ci": [
+          0.38095238095238093,
+          0.8571428571428571
+        ]
+      },
+      "sent": 48,
+      "verdict": "priority fee decides (loose: 81% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 15,
+        "detectable_tau": 0.5844237271847167,
+        "p_value": 1.0,
+        "pairs": 30,
+        "q_value": 1.0,
+        "tau": 0.0,
+        "tau_ci": [
+          -0.4666666666666667,
+          0.5333333333333333
+        ]
+      },
+      "batches": 11,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.5850205038012574,
+      "groups": 5,
+      "head_to_head": {
+        "agree": 15,
+        "detectable_tau": 0.876795153364914,
+        "p_value": 0.0010998900109989002,
+        "pairs": 15,
+        "q_value": 0.004568773891841586,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam / conflict",
+      "landed": 20,
+      "landed_in_window": 20,
+      "median_position": 0.5652173913043478,
+      "price": {
+        "agree": 30,
+        "detectable_tau": 0.5850205038012574,
+        "p_value": 0.00009999000099990002,
+        "pairs": 30,
+        "q_value": 0.0008999100089991,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sent": 40,
+      "verdict": "priority fee decides (strict: 100% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 21,
+        "detectable_tau": 0.7097596234939221,
+        "p_value": 0.0021997800219978004,
+        "pairs": 24,
+        "q_value": 0.008484865799134373,
+        "tau": 0.75,
+        "tau_ci": [
+          0.25,
+          1.0
+        ]
+      },
+      "batches": 14,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.7097596234939221,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 3,
+        "detectable_tau": 1.0,
+        "p_value": 1.0,
+        "pairs": 7,
+        "q_value": 1.0,
+        "tau": -0.14285714285714285,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam / stagger",
+      "landed": 16,
+      "landed_in_window": 16,
+      "median_position": 0.44193548387096776,
+      "price": {
+        "agree": 20,
+        "detectable_tau": 0.7061001172655985,
+        "p_value": 0.007899210078992101,
+        "pairs": 24,
+        "q_value": 0.021327867213278673,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "sent": 46,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 123,
+        "detectable_tau": 0.2605923590750422,
+        "p_value": 0.00009999000099990002,
+        "pairs": 174,
+        "q_value": 0.00035996400359964006,
+        "tau": 0.41379310344827586,
+        "tau_ci": [
+          0.1839080459770115,
+          0.632183908045977
+        ]
+      },
+      "batches": 37,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.26128597643662904,
+      "groups": 29,
+      "head_to_head": {
+        "agree": 42,
+        "detectable_tau": 0.32922001727031386,
+        "p_value": 0.18838116188381163,
+        "pairs": 101,
+        "q_value": 0.2422043509934721,
+        "tau": -0.16831683168316833,
+        "tau_ci": [
+          -0.49473684210526314,
+          0.1827956989247312
+        ]
+      },
+      "key": "client Firedancer",
+      "landed": 132,
+      "landed_in_window": 116,
+      "median_position": 0.12622549019607843,
+      "price": {
+        "agree": 106,
+        "detectable_tau": 0.26128597643662904,
+        "p_value": 0.0211978802119788,
+        "pairs": 174,
+        "q_value": 0.03815618438156184,
+        "tau": 0.21839080459770116,
+        "tau_ci": [
+          -0.022988505747126436,
+          0.4482758620689655
+        ]
+      },
+      "sent": 148,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 33,
+        "detectable_tau": 0.4717931567433864,
+        "p_value": 0.2191780821917808,
+        "pairs": 54,
+        "q_value": 0.3586550435865504,
+        "tau": 0.2222222222222222,
+        "tau_ci": [
+          -0.18518518518518517,
+          0.6296296296296297
+        ]
+      },
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.4717931567433864,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 19,
+        "detectable_tau": 0.617253348335567,
+        "p_value": 0.47165283471652836,
+        "pairs": 32,
+        "q_value": 0.6064107874926793,
+        "tau": 0.1875,
+        "tau_ci": [
+          -0.48148148148148145,
+          0.8620689655172413
+        ]
+      },
+      "key": "client Firedancer / burst",
+      "landed": 44,
+      "landed_in_window": 36,
+      "median_position": 0.07645875251509054,
+      "price": {
+        "agree": 39,
+        "detectable_tau": 0.46956418485999263,
+        "p_value": 0.006299370062993701,
+        "pairs": 54,
+        "q_value": 0.0188981101889811,
+        "tau": 0.4444444444444444,
+        "tau_ci": [
+          -0.037037037037037035,
+          0.8518518518518519
+        ]
+      },
+      "sent": 52,
+      "verdict": "priority fee decides (loose: 72% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 34,
+        "detectable_tau": 0.4707985178498063,
+        "p_value": 0.1426857314268573,
+        "pairs": 54,
+        "q_value": 0.26569067231207916,
+        "tau": 0.25925925925925924,
+        "tau_ci": [
+          -0.14814814814814814,
+          0.6296296296296297
+        ]
+      },
+      "batches": 11,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.47177021809260916,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 15,
+        "detectable_tau": 0.7065805874581267,
+        "p_value": 0.39746025397460255,
+        "pairs": 24,
+        "q_value": 0.5266448964859611,
+        "tau": 0.25,
+        "tau_ci": [
+          -0.391304347826087,
+          0.7647058823529411
+        ]
+      },
+      "key": "client Firedancer / conflict",
+      "landed": 36,
+      "landed_in_window": 36,
+      "median_position": 0.11410788381742738,
+      "price": {
+        "agree": 40,
+        "detectable_tau": 0.47177021809260916,
+        "p_value": 0.0036996300369963003,
+        "pairs": 54,
+        "q_value": 0.013318668133186681,
+        "tau": 0.48148148148148145,
+        "tau_ci": [
+          0.1111111111111111,
+          0.8518518518518519
+        ]
+      },
+      "sent": 44,
+      "verdict": "priority fee decides (loose: 74% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 56,
+        "detectable_tau": 0.3959993252575569,
+        "p_value": 0.00009999000099990002,
+        "pairs": 66,
+        "q_value": 0.0008999100089991,
+        "tau": 0.696969696969697,
+        "tau_ci": [
+          0.36363636363636365,
+          0.9090909090909091
+        ]
+      },
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.3959993252575569,
+      "groups": 11,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 0.4856535349069323,
+        "p_value": 0.00039996000399960006,
+        "pairs": 45,
+        "q_value": 0.0019634400196344003,
+        "tau": -0.6444444444444445,
+        "tau_ci": [
+          -0.95,
+          -0.2
+        ]
+      },
+      "key": "client Firedancer / stagger",
+      "landed": 52,
+      "landed_in_window": 44,
+      "median_position": 0.15869017632241814,
+      "price": {
+        "agree": 27,
+        "detectable_tau": 0.39599033847465004,
+        "p_value": 0.26007399260073993,
+        "pairs": 66,
+        "q_value": 0.4077363692202208,
+        "tau": -0.18181818181818182,
+        "tau_ci": [
+          -0.48484848484848486,
+          0.18181818181818182
+        ]
+      },
+      "sent": 52,
+      "verdict": "arrival order decides (85% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 70,
+        "detectable_tau": 0.32837655461004256,
+        "p_value": 0.004199580041995801,
+        "pairs": 104,
+        "q_value": 0.008399160083991601,
+        "tau": 0.34615384615384615,
+        "tau_ci": [
+          0.031578947368421054,
+          0.6571428571428571
+        ]
+      },
+      "batches": 39,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.32837655461004256,
+      "groups": 21,
+      "head_to_head": {
+        "agree": 17,
+        "detectable_tau": 0.48273506864858906,
+        "p_value": 0.21477852214778523,
+        "pairs": 45,
+        "q_value": 0.25773422657734224,
+        "tau": -0.24444444444444444,
+        "tau_ci": [
+          -0.68,
+          0.15555555555555556
+        ]
+      },
+      "key": "client HarmonicAgave",
+      "landed": 156,
+      "landed_in_window": 80,
+      "median_position": 0.40329218106995884,
+      "price": {
+        "agree": 59,
+        "detectable_tau": 0.32771874337163226,
+        "p_value": 0.275972402759724,
+        "pairs": 104,
+        "q_value": 0.3104689531046895,
+        "tau": 0.1346153846153846,
+        "tau_ci": [
+          -0.11926605504587157,
+          0.3888888888888889
+        ]
+      },
+      "sent": 156,
+      "verdict": "arrival order decides (67% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 17,
+        "detectable_tau": 0.5386278544577972,
+        "p_value": 0.37646235376462356,
+        "pairs": 42,
+        "q_value": 0.5212555667510171,
+        "tau": -0.19047619047619047,
+        "tau_ci": [
+          -0.47619047619047616,
+          0.09523809523809523
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.5386278544577972,
+      "groups": 7,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 0.824870221767354,
+        "p_value": 0.8146185381461853,
+        "pairs": 14,
+        "q_value": 0.8977428787733471,
+        "tau": 0.14285714285714285,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.7333333333333333
+        ]
+      },
+      "key": "client HarmonicAgave / burst",
+      "landed": 56,
+      "landed_in_window": 28,
+      "median_position": 0.07905138339920949,
+      "price": {
+        "agree": 19,
+        "detectable_tau": 0.5367246743412167,
+        "p_value": 0.6994300569943006,
+        "pairs": 42,
+        "q_value": 0.8069320727501718,
+        "tau": -0.09523809523809523,
+        "tau_ci": [
+          -0.38095238095238093,
+          0.3333333333333333
+        ]
+      },
+      "sent": 56,
+      "verdict": "no rule detected (this cell could detect tau of ±0.54 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 10,
+        "detectable_tau": 0.7945197374474701,
+        "p_value": 0.8453154684531546,
+        "pairs": 18,
+        "q_value": 0.9062623149449761,
+        "tau": 0.1111111111111111,
+        "tau_ci": [
+          -0.6666666666666666,
+          1.0
+        ]
+      },
+      "batches": 11,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.7945197374474701,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 1.0,
+        "p_value": 0.19938006199380062,
+        "pairs": 10,
+        "q_value": 0.33645385461453853,
+        "tau": 0.6,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "key": "client HarmonicAgave / conflict",
+      "landed": 44,
+      "landed_in_window": 12,
+      "median_position": 0.11073825503355705,
+      "price": {
+        "agree": 16,
+        "detectable_tau": 0.793579524689334,
+        "p_value": 0.007899210078992101,
+        "pairs": 18,
+        "q_value": 0.021327867213278673,
+        "tau": 0.7777777777777778,
+        "tau_ci": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "sent": 44,
+      "verdict": "too few blocks (3 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 43,
+        "detectable_tau": 0.5121007907917842,
+        "p_value": 0.00009999000099990002,
+        "pairs": 44,
+        "q_value": 0.0008999100089991,
+        "tau": 0.9545454545454546,
+        "tau_ci": [
+          0.8636363636363636,
+          1.0
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.5122281889952929,
+      "groups": 11,
+      "head_to_head": {
+        "agree": 1,
+        "detectable_tau": 0.7412814972859125,
+        "p_value": 0.00029997000299970003,
+        "pairs": 21,
+        "q_value": 0.0016198380161983803,
+        "tau": -0.9047619047619048,
+        "tau_ci": [
+          -1.0,
+          -0.7142857142857143
+        ]
+      },
+      "key": "client HarmonicAgave / stagger",
+      "landed": 56,
+      "landed_in_window": 40,
+      "median_position": 0.6135135135135135,
+      "price": {
+        "agree": 24,
+        "detectable_tau": 0.5122281889952929,
+        "p_value": 0.7023297670232976,
+        "pairs": 44,
+        "q_value": 0.8069320727501718,
+        "tau": 0.09090909090909091,
+        "tau_ci": [
+          -0.22448979591836735,
+          0.42857142857142855
+        ]
+      },
+      "sent": 56,
+      "verdict": "arrival order decides (98% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 73,
+        "detectable_tau": 0.3074995764358014,
+        "p_value": 0.055194480551944806,
+        "pairs": 120,
+        "q_value": 0.09031824090318241,
+        "tau": 0.21666666666666667,
+        "tau_ci": [
+          -0.056910569105691054,
+          0.48717948717948717
+        ]
+      },
+      "batches": 38,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.3091246227203746,
+      "groups": 22,
+      "head_to_head": {
+        "agree": 36,
+        "detectable_tau": 0.4408985951108513,
+        "p_value": 0.14658534146585342,
+        "pairs": 58,
+        "q_value": 0.2029643189527201,
+        "tau": 0.2413793103448276,
+        "tau_ci": [
+          -0.18518518518518517,
+          0.582089552238806
+        ]
+      },
+      "key": "client HarmonicFiredancer",
+      "landed": 148,
+      "landed_in_window": 88,
+      "median_position": 0.35083532219570407,
+      "price": {
+        "agree": 87,
+        "detectable_tau": 0.3091246227203746,
+        "p_value": 0.00009999000099990002,
+        "pairs": 120,
+        "q_value": 0.00035996400359964006,
+        "tau": 0.45,
+        "tau_ci": [
+          0.24324324324324326,
+          0.6333333333333333
+        ]
+      },
+      "sent": 152,
+      "verdict": "priority fee decides (loose: 72% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 35,
+        "detectable_tau": 0.4315429001192055,
+        "p_value": 0.3340665933406659,
+        "pairs": 60,
+        "q_value": 0.486235586967619,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.2,
+          0.5
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.4330405121474389,
+      "groups": 10,
+      "head_to_head": {
+        "agree": 14,
+        "detectable_tau": 0.6144023372559755,
+        "p_value": 0.5991400859914009,
+        "pairs": 24,
+        "q_value": 0.735308287353083,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.25,
+          0.5789473684210527
+        ]
+      },
+      "key": "client HarmonicFiredancer / burst",
+      "landed": 52,
+      "landed_in_window": 40,
+      "median_position": 0.3728448275862069,
+      "price": {
+        "agree": 39,
+        "detectable_tau": 0.4330405121474389,
+        "p_value": 0.07479252074792521,
+        "pairs": 60,
+        "q_value": 0.14958504149585042,
+        "tau": 0.3,
+        "tau_ci": [
+          0.03333333333333333,
+          0.5333333333333333
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.43 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 14,
+        "detectable_tau": 0.5580488062362169,
+        "p_value": 0.33586641335866413,
+        "pairs": 36,
+        "q_value": 0.486235586967619,
+        "tau": -0.2222222222222222,
+        "tau_ci": [
+          -0.6111111111111112,
+          0.2222222222222222
+        ]
+      },
+      "batches": 12,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.5580488062362169,
+      "groups": 6,
+      "head_to_head": {
+        "agree": 22,
+        "detectable_tau": 0.6942113825233324,
+        "p_value": 0.00019998000199980003,
+        "pairs": 23,
+        "q_value": 0.0011998800119988001,
+        "tau": 0.9130434782608695,
+        "tau_ci": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / conflict",
+      "landed": 48,
+      "landed_in_window": 24,
+      "median_position": 0.3460620525059666,
+      "price": {
+        "agree": 35,
+        "detectable_tau": 0.5577108952399679,
+        "p_value": 0.00009999000099990002,
+        "pairs": 36,
+        "q_value": 0.0008999100089991,
+        "tau": 0.9444444444444444,
+        "tau_ci": [
+          0.8333333333333334,
+          1.0
+        ]
+      },
+      "sent": 48,
+      "verdict": "priority fee decides (strict: 97% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 24,
+        "detectable_tau": 0.7014860976411665,
+        "p_value": 0.00009999000099990002,
+        "pairs": 24,
+        "q_value": 0.0008999100089991,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.7014860976411665,
+      "groups": 6,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 0.9379673213694475,
+        "p_value": 0.0059994000599940004,
+        "pairs": 11,
+        "q_value": 0.0188981101889811,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / stagger",
+      "landed": 48,
+      "landed_in_window": 24,
+      "median_position": 0.42024539877300615,
+      "price": {
+        "agree": 13,
+        "detectable_tau": 0.6141008855563541,
+        "p_value": 0.8559144085591441,
+        "pairs": 24,
+        "q_value": 0.9062623149449761,
+        "tau": 0.08333333333333333,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.5238095238095238
+        ]
+      },
+      "sent": 52,
+      "verdict": "arrival order decides (100% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 87,
+        "detectable_tau": 0.3183380806197915,
+        "p_value": 0.00009999000099990002,
+        "pairs": 116,
+        "q_value": 0.00035996400359964006,
+        "tau": 0.5,
+        "tau_ci": [
+          0.32075471698113206,
+          0.6825396825396826
+        ]
+      },
+      "batches": 38,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.3183380806197915,
+      "groups": 21,
+      "head_to_head": {
+        "agree": 20,
+        "detectable_tau": 0.4918945394128478,
+        "p_value": 0.3457654234576542,
+        "pairs": 49,
+        "q_value": 0.35176482351764826,
+        "tau": -0.1836734693877551,
+        "tau_ci": [
+          -0.4925373134328358,
+          0.16279069767441862
+        ]
+      },
+      "key": "client JitoLabs",
+      "landed": 88,
+      "landed_in_window": 80,
+      "median_position": 0.2264808362369338,
+      "price": {
+        "agree": 78,
+        "detectable_tau": 0.3183010546363324,
+        "p_value": 0.0018998100189981002,
+        "pairs": 116,
+        "q_value": 0.004885225763137972,
+        "tau": 0.3448275862068966,
+        "tau_ci": [
+          0.1320754716981132,
+          0.5555555555555556
+        ]
+      },
+      "sent": 136,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 26,
+        "detectable_tau": 0.48008635783156567,
+        "p_value": 0.7221277872212779,
+        "pairs": 48,
+        "q_value": 0.8123937606239376,
+        "tau": 0.08333333333333333,
+        "tau_ci": [
+          -0.08333333333333333,
+          0.20833333333333334
+        ]
+      },
+      "batches": 13,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.48008635783156567,
+      "groups": 8,
+      "head_to_head": {
+        "agree": 14,
+        "detectable_tau": 0.7244947541218165,
+        "p_value": 0.193980601939806,
+        "pairs": 20,
+        "q_value": 0.33645385461453853,
+        "tau": 0.4,
+        "tau_ci": [
+          0.04,
+          0.8
+        ]
+      },
+      "key": "client JitoLabs / burst",
+      "landed": 32,
+      "landed_in_window": 32,
+      "median_position": 0.2264808362369338,
+      "price": {
+        "agree": 34,
+        "detectable_tau": 0.47967333625979014,
+        "p_value": 0.0212978702129787,
+        "pairs": 48,
+        "q_value": 0.050003695282645644,
+        "tau": 0.4166666666666667,
+        "tau_ci": [
+          0.125,
+          0.7083333333333334
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.48 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 32,
+        "detectable_tau": 0.55647152571254,
+        "p_value": 0.00009999000099990002,
+        "pairs": 36,
+        "q_value": 0.0008999100089991,
+        "tau": 0.7777777777777778,
+        "tau_ci": [
+          0.5555555555555556,
+          0.9444444444444444
+        ]
+      },
+      "batches": 12,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.55647152571254,
+      "groups": 6,
+      "head_to_head": {
+        "agree": 4,
+        "detectable_tau": 0.837269410348469,
+        "p_value": 0.2642735726427357,
+        "pairs": 14,
+        "q_value": 0.4077363692202208,
+        "tau": -0.42857142857142855,
+        "tau_ci": [
+          -0.8181818181818182,
+          0.5
+        ]
+      },
+      "key": "client JitoLabs / conflict",
+      "landed": 28,
+      "landed_in_window": 24,
+      "median_position": 0.14084507042253522,
+      "price": {
+        "agree": 26,
+        "detectable_tau": 0.5555395520428562,
+        "p_value": 0.0347965203479652,
+        "pairs": 36,
+        "q_value": 0.07393106843161837,
+        "tau": 0.4444444444444444,
+        "tau_ci": [
+          0.0,
+          0.8888888888888888
+        ]
+      },
+      "sent": 44,
+      "verdict": "arrival order decides (89% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 29,
+        "detectable_tau": 0.6162974195627278,
+        "p_value": 0.00019998000199980003,
+        "pairs": 32,
+        "q_value": 0.0011998800119988001,
+        "tau": 0.8125,
+        "tau_ci": [
+          0.5675675675675675,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.6162974195627278,
+      "groups": 7,
+      "head_to_head": {
+        "agree": 2,
+        "detectable_tau": 0.8657004545228884,
+        "p_value": 0.0306969303069693,
+        "pairs": 15,
+        "q_value": 0.06906809319068093,
+        "tau": -0.7333333333333333,
+        "tau_ci": [
+          -1.0,
+          -0.3684210526315789
+        ]
+      },
+      "key": "client JitoLabs / stagger",
+      "landed": 28,
+      "landed_in_window": 24,
+      "median_position": 0.38571428571428573,
+      "price": {
+        "agree": 18,
+        "detectable_tau": 0.613620833707668,
+        "p_value": 0.6662333766623337,
+        "pairs": 32,
+        "q_value": 0.7994800519948005,
+        "tau": 0.125,
+        "tau_ci": [
+          -0.1875,
+          0.5135135135135135
+        ]
+      },
+      "sent": 40,
+      "verdict": "arrival order decides (91% of pairs follow it)"
+    }
+  ],
+  "later_slots": [
+    {
+      "arrival": {
+        "agree": 45,
+        "detectable_tau": 0.47853622507021754,
+        "p_value": 0.00009999000099990002,
+        "pairs": 48,
+        "q_value": 0.0008999100089991002,
+        "tau": 0.875,
+        "tau_ci": [
+          0.7083333333333334,
+          1.0
+        ]
+      },
+      "batches": 35,
+      "client_id": "Agave",
+      "detectable_tau": 0.4795796640202048,
+      "groups": 8,
+      "head_to_head": {
+        "agree": 2,
+        "detectable_tau": 0.7006926359222005,
+        "p_value": 0.003999600039996,
+        "pairs": 19,
+        "q_value": 0.0143985601439856,
+        "tau": -0.7894736842105263,
+        "tau_ci": [
+          -1.0,
+          -0.25
+        ]
+      },
+      "key": "client Agave",
+      "landed": 76,
+      "landed_in_window": 33,
+      "median_position": 0.5381526104417671,
+      "price": {
+        "agree": 30,
+        "detectable_tau": 0.4795796640202048,
+        "p_value": 0.18738126187381263,
+        "pairs": 48,
+        "q_value": 0.30662388306623883,
+        "tau": 0.25,
+        "tau_ci": [
+          -0.08333333333333333,
+          0.5833333333333334
+        ]
+      },
+      "sent": 136,
+      "verdict": "arrival order decides (94% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 10,
+        "detectable_tau": 0.9572234105775086,
+        "p_value": 0.08999100089991001,
+        "pairs": 12,
+        "q_value": 0.26997300269973,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "batches": 12,
+      "client_id": "Agave",
+      "detectable_tau": 0.9580721351587524,
+      "groups": 2,
+      "head_to_head": {
+        "agree": 2,
+        "detectable_tau": 1.0,
+        "p_value": 0.7521247875212479,
+        "pairs": 6,
+        "q_value": 0.9386421357864214,
+        "tau": -0.3333333333333333,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "key": "client Agave / burst",
+      "landed": 16,
+      "landed_in_window": 8,
+      "median_position": 0.24926686217008798,
+      "price": {
+        "agree": 8,
+        "detectable_tau": 0.9580721351587524,
+        "p_value": 0.47925207479252074,
+        "pairs": 12,
+        "q_value": 0.9328032713969983,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
+      },
+      "sent": 48,
+      "verdict": "too few blocks (2 blocks): not judged"
     },
     {
       "arrival": {
         "agree": 23,
-        "p_value": 0.6997300269973002,
-        "pairs": 42,
-        "q_value": 0.8039451374011535,
-        "tau": 0.09523809523809523
+        "detectable_tau": 0.7052739169499723,
+        "p_value": 0.00009999000099990002,
+        "pairs": 24,
+        "q_value": 0.0026997300269973002,
+        "tau": 0.9166666666666666,
+        "tau_ci": [
+          0.75,
+          1.0
+        ]
       },
-      "batches": 10,
-      "client_id": "JitoLabs",
-      "groups": 7,
+      "batches": 11,
+      "client_id": "Agave",
+      "detectable_tau": 0.7052739169499723,
+      "groups": 4,
       "head_to_head": {
-        "agree": 12,
-        "p_value": 0.3223677632236776,
-        "pairs": 18,
-        "q_value": 0.4689004783732153,
-        "tau": 0.3333333333333333
+        "agree": 0,
+        "detectable_tau": 1.0,
+        "p_value": 0.020997900209979003,
+        "pairs": 8,
+        "q_value": 0.12718728127187282,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
       },
-      "key": "client JitoLabs / burst",
-      "landed": 28,
-      "landed_in_window": 28,
-      "median_position": 0.17682926829268292,
+      "key": "client Agave / conflict",
+      "landed": 24,
+      "landed_in_window": 16,
+      "median_position": 0.8,
       "price": {
-        "agree": 29,
-        "p_value": 0.053394660533946606,
-        "pairs": 42,
-        "q_value": 0.1517532457280588,
-        "tau": 0.38095238095238093
+        "agree": 15,
+        "detectable_tau": 0.7052314213870439,
+        "p_value": 0.39636036396360363,
+        "pairs": 24,
+        "q_value": 0.8561383861613838,
+        "tau": 0.25,
+        "tau_ci": [
+          -0.16666666666666666,
+          0.5833333333333334
+        ]
       },
       "sent": 40,
-      "verdict": "no rule detected: ordering indistinguishable from random"
+      "verdict": "arrival order decides (96% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 29,
-        "p_value": 0.0010998900109989002,
-        "pairs": 36,
-        "q_value": 0.007424257574242576,
-        "tau": 0.6111111111111112
+        "agree": 12,
+        "detectable_tau": 0.9616017917569124,
+        "p_value": 0.0034996500349965005,
+        "pairs": 12,
+        "q_value": 0.03959604039596041,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
       },
-      "batches": 8,
-      "client_id": "JitoLabs",
-      "groups": 6,
+      "batches": 12,
+      "client_id": "Agave",
+      "detectable_tau": 0.9616017917569124,
+      "groups": 2,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 1.0,
+        "p_value": 0.12488751124887511,
+        "pairs": 5,
+        "q_value": 0.35494345302311875,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client Agave / stagger",
+      "landed": 36,
+      "landed_in_window": 9,
+      "median_position": 0.5136986301369864,
+      "price": {
+        "agree": 7,
+        "detectable_tau": 0.9606569215411345,
+        "p_value": 0.8244175582441756,
+        "pairs": 12,
+        "q_value": 0.9386421357864214,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.6666666666666666
+        ]
+      },
+      "sent": 48,
+      "verdict": "too few blocks (2 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 22,
+        "detectable_tau": 0.5370627755747759,
+        "p_value": 0.8979102089791021,
+        "pairs": 42,
+        "q_value": 0.9515754306922249,
+        "tau": 0.047619047619047616,
+        "tau_ci": [
+          -0.42857142857142855,
+          0.5714285714285714
+        ]
+      },
+      "batches": 38,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.5383668780764251,
+      "groups": 7,
+      "head_to_head": {
+        "agree": 19,
+        "detectable_tau": 0.7062845738254068,
+        "p_value": 0.025897410258974102,
+        "pairs": 24,
+        "q_value": 0.0665933406659334,
+        "tau": 0.5833333333333334,
+        "tau_ci": [
+          -0.047619047619047616,
+          0.9285714285714286
+        ]
+      },
+      "key": "client AgaveBam",
+      "landed": 64,
+      "landed_in_window": 28,
+      "median_position": 0.5652173913043478,
+      "price": {
+        "agree": 36,
+        "detectable_tau": 0.5383668780764251,
+        "p_value": 0.00009999000099990002,
+        "pairs": 42,
+        "q_value": 0.0008999100089991002,
+        "tau": 0.7142857142857143,
+        "tau_ci": [
+          0.5238095238095238,
+          0.9047619047619048
+        ]
+      },
+      "sent": 134,
+      "verdict": "priority fee decides (loose: 86% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 6,
+        "detectable_tau": 0.7912831332477244,
+        "p_value": 0.32536746325367466,
+        "pairs": 18,
+        "q_value": 0.7986292279862923,
+        "tau": -0.3333333333333333,
+        "tau_ci": [
+          -0.6666666666666666,
+          0.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.7952432295359959,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 11,
+        "detectable_tau": 0.9510512224145817,
+        "p_value": 0.0211978802119788,
+        "pairs": 12,
+        "q_value": 0.12718728127187282,
+        "tau": 0.8333333333333334,
+        "tau_ci": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam / burst",
+      "landed": 28,
+      "landed_in_window": 12,
+      "median_position": 0.5635179153094463,
+      "price": {
+        "agree": 16,
+        "detectable_tau": 0.7952432295359959,
+        "p_value": 0.0071992800719928,
+        "pairs": 18,
+        "q_value": 0.055537303412515886,
+        "tau": 0.7777777777777778,
+        "tau_ci": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "sent": 48,
+      "verdict": "too few blocks (3 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 4,
+        "detectable_tau": 0.9630421470537827,
+        "p_value": 0.5009499050094991,
+        "pairs": 12,
+        "q_value": 0.9328032713969983,
+        "tau": -0.3333333333333333,
+        "tau_ci": [
+          -0.6666666666666666,
+          0.0
+        ]
+      },
+      "batches": 11,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.9630421470537827,
+      "groups": 2,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 1.0,
+        "p_value": 0.041995800419958006,
+        "pairs": 8,
+        "q_value": 0.18898110188981102,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam / conflict",
+      "landed": 20,
+      "landed_in_window": 8,
+      "median_position": 0.8333333333333334,
+      "price": {
+        "agree": 12,
+        "detectable_tau": 0.961986999394336,
+        "p_value": 0.0038996100389961006,
+        "pairs": 12,
+        "q_value": 0.03959604039596041,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sent": 40,
+      "verdict": "too few blocks (2 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 12,
+        "detectable_tau": 0.9555683312757473,
+        "p_value": 0.0028997100289971,
+        "pairs": 12,
+        "q_value": 0.03959604039596041,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "batches": 14,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.961229054863961,
+      "groups": 2,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 1.0,
+        "p_value": 0.22347765223477653,
+        "pairs": 4,
+        "q_value": 0.6033896610338967,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client AgaveBam / stagger",
+      "landed": 16,
+      "landed_in_window": 8,
+      "median_position": 0.532258064516129,
+      "price": {
+        "agree": 8,
+        "detectable_tau": 0.961229054863961,
+        "p_value": 0.4921507849215078,
+        "pairs": 12,
+        "q_value": 0.9328032713969983,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      "sent": 46,
+      "verdict": "too few blocks (2 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 41,
+        "detectable_tau": 0.47167599671920557,
+        "p_value": 0.0015998400159984002,
+        "pairs": 54,
+        "q_value": 0.007199280071992801,
+        "tau": 0.5185185185185185,
+        "tau_ci": [
+          0.07407407407407407,
+          0.8888888888888888
+        ]
+      },
+      "batches": 37,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.47167599671920557,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 6,
+        "detectable_tau": 0.6554497093897231,
+        "p_value": 0.010698930106989302,
+        "pairs": 30,
+        "q_value": 0.032096790320967905,
+        "tau": -0.6,
+        "tau_ci": [
+          -0.95,
+          -0.09090909090909091
+        ]
+      },
+      "key": "client Firedancer",
+      "landed": 132,
+      "landed_in_window": 36,
+      "median_position": 0.13117283950617284,
+      "price": {
+        "agree": 23,
+        "detectable_tau": 0.47166064087950677,
+        "p_value": 0.43145685431456854,
+        "pairs": 54,
+        "q_value": 0.5547302412615881,
+        "tau": -0.14814814814814814,
+        "tau_ci": [
+          -0.5555555555555556,
+          0.2962962962962963
+        ]
+      },
+      "sent": 148,
+      "verdict": "arrival order decides (76% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 11,
+        "detectable_tau": 0.7926607399396286,
+        "p_value": 0.5601439856014399,
+        "pairs": 18,
+        "q_value": 0.9386421357864214,
+        "tau": 0.2222222222222222,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.7929051680191477,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 3,
+        "detectable_tau": 1.0,
+        "p_value": 0.7788221177882212,
+        "pairs": 8,
+        "q_value": 0.9386421357864214,
+        "tau": -0.25,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "key": "client Firedancer / burst",
+      "landed": 44,
+      "landed_in_window": 12,
+      "median_position": 0.12413261372397841,
+      "price": {
+        "agree": 9,
+        "detectable_tau": 0.7929051680191477,
+        "p_value": 1.0,
+        "pairs": 18,
+        "q_value": 1.0,
+        "tau": 0.0,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "sent": 52,
+      "verdict": "too few blocks (3 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 12,
+        "detectable_tau": 0.9615303624419224,
+        "p_value": 0.004399560043995601,
+        "pairs": 12,
+        "q_value": 0.03959604039596041,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "batches": 11,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.9615303624419224,
+      "groups": 2,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 1.0,
+        "p_value": 0.24857514248575144,
+        "pairs": 4,
+        "q_value": 0.6391932235347894,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client Firedancer / conflict",
+      "landed": 36,
+      "landed_in_window": 8,
+      "median_position": 0.18434343434343434,
+      "price": {
+        "agree": 8,
+        "detectable_tau": 0.960472508979394,
+        "p_value": 0.4884511548845116,
+        "pairs": 12,
+        "q_value": 0.9328032713969983,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
+      },
+      "sent": 44,
+      "verdict": "too few blocks (2 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 18,
+        "detectable_tau": 0.704737014869492,
+        "p_value": 0.0565943405659434,
+        "pairs": 24,
+        "q_value": 0.1943805619438056,
+        "tau": 0.5,
+        "tau_ci": [
+          -0.25,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.7061752263585537,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 3,
+        "detectable_tau": 0.7999104518331523,
+        "p_value": 0.0331966803319668,
+        "pairs": 18,
+        "q_value": 0.1629655216296552,
+        "tau": -0.6666666666666666,
+        "tau_ci": [
+          -1.0,
+          -0.14285714285714285
+        ]
+      },
+      "key": "client Firedancer / stagger",
+      "landed": 52,
+      "landed_in_window": 16,
+      "median_position": 0.4420485175202156,
+      "price": {
+        "agree": 6,
+        "detectable_tau": 0.7061752263585537,
+        "p_value": 0.0575942405759424,
+        "pairs": 24,
+        "q_value": 0.1943805619438056,
+        "tau": -0.5,
+        "tau_ci": [
+          -0.6666666666666666,
+          -0.3333333333333333
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.71 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 23,
+        "detectable_tau": 0.5167698517062586,
+        "p_value": 0.8987101289871013,
+        "pairs": 44,
+        "q_value": 0.9515754306922249,
+        "tau": 0.045454545454545456,
+        "tau_ci": [
+          -0.2727272727272727,
+          0.3877551020408163
+        ]
+      },
+      "batches": 39,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.5167698517062586,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 13,
+        "detectable_tau": 0.7449073879872455,
+        "p_value": 0.47855214478552144,
+        "pairs": 21,
+        "q_value": 0.5742625737426257,
+        "tau": 0.23809523809523808,
+        "tau_ci": [
+          -0.28,
+          0.6666666666666666
+        ]
+      },
+      "key": "client HarmonicAgave",
+      "landed": 156,
+      "landed_in_window": 36,
+      "median_position": 0.16908212560386474,
+      "price": {
+        "agree": 28,
+        "detectable_tau": 0.5153834981090556,
+        "p_value": 0.16548345165483452,
+        "pairs": 44,
+        "q_value": 0.29787021297870214,
+        "tau": 0.2727272727272727,
+        "tau_ci": [
+          -0.07692307692307693,
+          0.6363636363636364
+        ]
+      },
+      "sent": 156,
+      "verdict": "no rule detected (this cell could detect tau of ±0.52 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 8,
+        "detectable_tau": 0.7968417257880254,
+        "p_value": 0.8503149685031497,
+        "pairs": 18,
+        "q_value": 0.9386421357864214,
+        "tau": -0.1111111111111111,
+        "tau_ci": [
+          -0.6666666666666666,
+          0.3333333333333333
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.7973028441715757,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 6,
+        "detectable_tau": 1.0,
+        "p_value": 0.5898410158984102,
+        "pairs": 9,
+        "q_value": 0.9386421357864214,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
+      },
+      "key": "client HarmonicAgave / burst",
+      "landed": 56,
+      "landed_in_window": 12,
+      "median_position": 0.28205128205128205,
+      "price": {
+        "agree": 11,
+        "detectable_tau": 0.7973028441715757,
+        "p_value": 0.567043295670433,
+        "pairs": 18,
+        "q_value": 0.9386421357864214,
+        "tau": 0.2222222222222222,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
+      },
+      "sent": 56,
+      "verdict": "too few blocks (3 blocks): not judged"
+    },
+    {
+      "arrival": {
+        "agree": 4,
+        "detectable_tau": 1.0,
+        "p_value": 0.7587241275872413,
+        "pairs": 6,
+        "q_value": 0.9386421357864214,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      "batches": 11,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 1.0,
+      "groups": 1,
+      "head_to_head": {
+        "agree": 2,
+        "detectable_tau": 1.0,
+        "p_value": 0.6656334366563343,
+        "pairs": 2,
+        "q_value": 0.9386421357864214,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client HarmonicAgave / conflict",
+      "landed": 44,
+      "landed_in_window": 4,
+      "median_position": 0.21455223880597016,
+      "price": {
+        "agree": 6,
+        "detectable_tau": 1.0,
+        "p_value": 0.08089191080891911,
+        "pairs": 6,
+        "q_value": 0.25695077551068424,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sent": 44,
+      "verdict": "not enough co-located probes"
+    },
+    {
+      "arrival": {
+        "agree": 11,
+        "detectable_tau": 0.722583613404009,
+        "p_value": 0.8523147685231477,
+        "pairs": 20,
+        "q_value": 0.9386421357864214,
+        "tau": 0.1,
+        "tau_ci": [
+          -0.44,
+          0.8
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.7261468488645857,
+      "groups": 5,
+      "head_to_head": {
+        "agree": 5,
+        "detectable_tau": 1.0,
+        "p_value": 1.0,
+        "pairs": 10,
+        "q_value": 1.0,
+        "tau": 0.0,
+        "tau_ci": [
+          -1.0,
+          0.6
+        ]
+      },
+      "key": "client HarmonicAgave / stagger",
+      "landed": 56,
+      "landed_in_window": 20,
+      "median_position": 0.0436046511627907,
+      "price": {
+        "agree": 11,
+        "detectable_tau": 0.7261468488645857,
+        "p_value": 0.8582141785821418,
+        "pairs": 20,
+        "q_value": 0.9386421357864214,
+        "tau": 0.1,
+        "tau_ci": [
+          -0.2,
+          0.3333333333333333
+        ]
+      },
+      "sent": 56,
+      "verdict": "no rule detected (this cell could detect tau of ±0.73 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 36,
+        "detectable_tau": 0.4292338320990683,
+        "p_value": 0.23007699230076992,
+        "pairs": 60,
+        "q_value": 0.3185681431856814,
+        "tau": 0.2,
+        "tau_ci": [
+          -0.15151515151515152,
+          0.5666666666666667
+        ]
+      },
+      "batches": 38,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.43033820420636615,
+      "groups": 11,
+      "head_to_head": {
+        "agree": 20,
+        "detectable_tau": 0.6334649938205347,
+        "p_value": 0.11598840115988401,
+        "pairs": 29,
+        "q_value": 0.260973902609739,
+        "tau": 0.3793103448275862,
+        "tau_ci": [
+          -0.08333333333333333,
+          0.7368421052631579
+        ]
+      },
+      "key": "client HarmonicFiredancer",
+      "landed": 148,
+      "landed_in_window": 45,
+      "median_position": 0.2354368932038835,
+      "price": {
+        "agree": 47,
+        "detectable_tau": 0.43033820420636615,
+        "p_value": 0.0004999500049995,
+        "pairs": 60,
+        "q_value": 0.0029997000299970002,
+        "tau": 0.5666666666666667,
+        "tau_ci": [
+          0.2982456140350877,
+          0.8095238095238095
+        ]
+      },
+      "sent": 152,
+      "verdict": "priority fee decides (loose: 78% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 13,
+        "detectable_tau": 0.70665169391422,
+        "p_value": 0.8691130886911309,
+        "pairs": 24,
+        "q_value": 0.9386421357864214,
+        "tau": 0.08333333333333333,
+        "tau_ci": [
+          -0.4166666666666667,
+          0.5
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.70665169391422,
+      "groups": 4,
       "head_to_head": {
         "agree": 7,
+        "detectable_tau": 0.9557740305096953,
+        "p_value": 0.8128187181281872,
+        "pairs": 12,
+        "q_value": 0.9386421357864214,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.6666666666666666
+        ]
+      },
+      "key": "client HarmonicFiredancer / burst",
+      "landed": 52,
+      "landed_in_window": 16,
+      "median_position": 0.6496815286624203,
+      "price": {
+        "agree": 15,
+        "detectable_tau": 0.7053701858446116,
+        "p_value": 0.39566043395660433,
+        "pairs": 24,
+        "q_value": 0.8561383861613838,
+        "tau": 0.25,
+        "tau_ci": [
+          -0.16666666666666666,
+          0.5833333333333334
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.71 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 17,
+        "detectable_tau": 0.5841897709871128,
+        "p_value": 0.6506349365063494,
+        "pairs": 30,
+        "q_value": 0.9386421357864214,
+        "tau": 0.13333333333333333,
+        "tau_ci": [
+          -0.4,
+          0.6666666666666666
+        ]
+      },
+      "batches": 12,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.5841897709871128,
+      "groups": 5,
+      "head_to_head": {
+        "agree": 13,
+        "detectable_tau": 0.8637753166657979,
+        "p_value": 0.029697030296970302,
+        "pairs": 15,
+        "q_value": 0.16036396360363964,
+        "tau": 0.7333333333333333,
+        "tau_ci": [
+          0.25,
+          1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / conflict",
+      "landed": 48,
+      "landed_in_window": 20,
+      "median_position": 0.1826086956521739,
+      "price": {
+        "agree": 28,
+        "detectable_tau": 0.582747353193022,
+        "p_value": 0.00009999000099990002,
+        "pairs": 30,
+        "q_value": 0.0026997300269973002,
+        "tau": 0.8666666666666667,
+        "tau_ci": [
+          0.7333333333333333,
+          1.0
+        ]
+      },
+      "sent": 48,
+      "verdict": "priority fee decides (loose: 93% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 6,
+        "detectable_tau": 1.0,
+        "p_value": 0.050294970502949704,
+        "pairs": 6,
+        "q_value": 0.1943805619438056,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 1.0,
+      "groups": 2,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 1.0,
+        "p_value": 0.6572342765723428,
+        "pairs": 2,
+        "q_value": 0.9386421357864214,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / stagger",
+      "landed": 48,
+      "landed_in_window": 9,
+      "median_position": 0.2305084745762712,
+      "price": {
+        "agree": 4,
+        "detectable_tau": 1.0,
+        "p_value": 0.7205279472052795,
+        "pairs": 6,
+        "q_value": 0.9386421357864214,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          -0.3333333333333333,
+          1.0
+        ]
+      },
+      "sent": 52,
+      "verdict": "not enough co-located probes"
+    },
+    {
+      "arrival": {
+        "agree": 38,
+        "detectable_tau": 0.4407899835070121,
+        "p_value": 0.1357864213578642,
+        "pairs": 61,
+        "q_value": 0.2715728427157284,
+        "tau": 0.2459016393442623,
+        "tau_ci": [
+          -0.13725490196078433,
+          0.6060606060606061
+        ]
+      },
+      "batches": 38,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.4409890427835472,
+      "groups": 11,
+      "head_to_head": {
+        "agree": 14,
+        "detectable_tau": 0.6348157534568349,
+        "p_value": 1.0,
+        "pairs": 29,
+        "q_value": 1.0,
+        "tau": -0.034482758620689655,
+        "tau_ci": [
+          -0.48717948717948717,
+          0.52
+        ]
+      },
+      "key": "client JitoLabs",
+      "landed": 88,
+      "landed_in_window": 42,
+      "median_position": 0.2866666666666667,
+      "price": {
+        "agree": 37,
+        "detectable_tau": 0.4409890427835472,
+        "p_value": 0.2064793520647935,
+        "pairs": 61,
+        "q_value": 0.30971902809719026,
+        "tau": 0.21311475409836064,
+        "tau_ci": [
+          -0.04918032786885246,
+          0.49019607843137253
+        ]
+      },
+      "sent": 136,
+      "verdict": "no rule detected (this cell could detect tau of ±0.44 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 13,
+        "detectable_tau": 0.7088958855565888,
+        "p_value": 0.8656134386561344,
+        "pairs": 24,
+        "q_value": 0.9386421357864214,
+        "tau": 0.08333333333333333,
+        "tau_ci": [
+          0.0,
+          0.25
+        ]
+      },
+      "batches": 13,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.7088958855565888,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 5,
+        "detectable_tau": 1.0,
+        "p_value": 1.0,
+        "pairs": 9,
+        "q_value": 1.0,
+        "tau": 0.1111111111111111,
+        "tau_ci": [
+          -0.2,
+          1.0
+        ]
+      },
+      "key": "client JitoLabs / burst",
+      "landed": 32,
+      "landed_in_window": 16,
+      "median_position": 0.27,
+      "price": {
+        "agree": 14,
+        "detectable_tau": 0.7061185095936213,
+        "p_value": 0.617038296170383,
+        "pairs": 24,
+        "q_value": 0.9386421357864214,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.16666666666666666,
+          0.5
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.71 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 18,
+        "detectable_tau": 0.7046462275448517,
+        "p_value": 0.05729427057294271,
+        "pairs": 24,
+        "q_value": 0.1943805619438056,
+        "tau": 0.5,
+        "tau_ci": [
+          -0.08333333333333333,
+          0.9166666666666666
+        ]
+      },
+      "batches": 12,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.7066399235837499,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 6,
+        "detectable_tau": 0.8830627574033958,
+        "p_value": 0.5509449055094491,
+        "pairs": 16,
+        "q_value": 0.9386421357864214,
+        "tau": -0.25,
+        "tau_ci": [
+          -0.8181818181818182,
+          0.5294117647058824
+        ]
+      },
+      "key": "client JitoLabs / conflict",
+      "landed": 28,
+      "landed_in_window": 16,
+      "median_position": 0.7543859649122807,
+      "price": {
+        "agree": 14,
+        "detectable_tau": 0.7066399235837499,
+        "p_value": 0.6158384161583842,
+        "pairs": 24,
+        "q_value": 0.9386421357864214,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.6666666666666666
+        ]
+      },
+      "sent": 44,
+      "verdict": "no rule detected (this cell could detect tau of ±0.71 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 7,
+        "detectable_tau": 0.9690645460273797,
         "p_value": 1.0,
         "pairs": 13,
         "q_value": 1.0,
-        "tau": 0.07692307692307693
+        "tau": 0.07692307692307693,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
       },
-      "key": "client JitoLabs / conflict",
+      "batches": 13,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.9690645460273797,
+      "groups": 3,
+      "head_to_head": {
+        "agree": 3,
+        "detectable_tau": 1.0,
+        "p_value": 0.7026297370262974,
+        "pairs": 4,
+        "q_value": 0.9386421357864214,
+        "tau": 0.5,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "key": "client JitoLabs / stagger",
+      "landed": 28,
+      "landed_in_window": 10,
+      "median_position": 0.18620689655172415,
+      "price": {
+        "agree": 9,
+        "detectable_tau": 0.9663551816753696,
+        "p_value": 0.3534646535346465,
+        "pairs": 13,
+        "q_value": 0.8298735343856919,
+        "tau": 0.38461538461538464,
+        "tau_ci": [
+          0.0,
+          1.0
+        ]
+      },
+      "sent": 40,
+      "verdict": "too few blocks (3 blocks): not judged"
+    }
+  ],
+  "ordering": [
+    {
+      "arrival": {
+        "agree": 88,
+        "detectable_tau": 0.32057522469840705,
+        "p_value": 0.00009999000099990002,
+        "pairs": 111,
+        "q_value": 0.0004499550044995501,
+        "tau": 0.5855855855855856,
+        "tau_ci": [
+          0.3148148148148148,
+          0.8198198198198198
+        ]
+      },
+      "batches": 35,
+      "client_id": "Agave",
+      "detectable_tau": 0.3212436801077527,
+      "groups": 19,
+      "head_to_head": {
+        "agree": 20,
+        "detectable_tau": 0.4694289402291556,
+        "p_value": 0.1361863813618638,
+        "pairs": 54,
+        "q_value": 0.17002299770022997,
+        "tau": -0.25925925925925924,
+        "tau_ci": [
+          -0.7037037037037037,
+          0.2
+        ]
+      },
+      "key": "client Agave",
+      "landed": 76,
+      "landed_in_window": 76,
+      "median_position": 0.26099706744868034,
+      "price": {
+        "agree": 74,
+        "detectable_tau": 0.3212436801077527,
+        "p_value": 0.0045995400459954,
+        "pairs": 111,
+        "q_value": 0.01034896510348965,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          0.08771929824561403,
+          0.5675675675675675
+        ]
+      },
+      "sent": 136,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 20,
+        "detectable_tau": 0.708280138400339,
+        "p_value": 0.009099090090990901,
+        "pairs": 24,
+        "q_value": 0.024567543245675432,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "batches": 12,
+      "client_id": "Agave",
+      "detectable_tau": 0.708280138400339,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 3,
+        "detectable_tau": 0.9463133761424727,
+        "p_value": 0.3377662233776622,
+        "pairs": 11,
+        "q_value": 0.5112988701129887,
+        "tau": -0.45454545454545453,
+        "tau_ci": [
+          -1.0,
+          0.5
+        ]
+      },
+      "key": "client Agave / burst",
+      "landed": 16,
+      "landed_in_window": 16,
+      "median_position": 0.19877675840978593,
+      "price": {
+        "agree": 15,
+        "detectable_tau": 0.7060762655298584,
+        "p_value": 0.4012598740125987,
+        "pairs": 24,
+        "q_value": 0.5648665902640505,
+        "tau": 0.25,
+        "tau_ci": [
+          -0.25,
+          0.75
+        ]
+      },
+      "sent": 48,
+      "verdict": "arrival order decides (83% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 26,
+        "detectable_tau": 0.5560409423670054,
+        "p_value": 0.034996500349965,
+        "pairs": 36,
+        "q_value": 0.0755924407559244,
+        "tau": 0.4444444444444444,
+        "tau_ci": [
+          -0.1111111111111111,
+          0.9444444444444444
+        ]
+      },
+      "batches": 11,
+      "client_id": "Agave",
+      "detectable_tau": 0.5568757192766038,
+      "groups": 6,
+      "head_to_head": {
+        "agree": 9,
+        "detectable_tau": 0.7721596121438324,
+        "p_value": 1.0,
+        "pairs": 17,
+        "q_value": 1.0,
+        "tau": 0.058823529411764705,
+        "tau_ci": [
+          -1.0,
+          0.8
+        ]
+      },
+      "key": "client Agave / conflict",
       "landed": 24,
       "landed_in_window": 24,
-      "median_position": 0.14084507042253522,
+      "median_position": 0.5608695652173913,
+      "price": {
+        "agree": 27,
+        "detectable_tau": 0.5568757192766038,
+        "p_value": 0.0164983501649835,
+        "pairs": 36,
+        "q_value": 0.040495950404959506,
+        "tau": 0.5,
+        "tau_ci": [
+          0.1111111111111111,
+          0.8333333333333334
+        ]
+      },
+      "sent": 40,
+      "verdict": "priority fee decides (loose: 75% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 42,
+        "detectable_tau": 0.4745993200435876,
+        "p_value": 0.00039996000399960006,
+        "pairs": 51,
+        "q_value": 0.0023997600239976003,
+        "tau": 0.6470588235294118,
+        "tau_ci": [
+          0.2549019607843137,
+          0.9259259259259259
+        ]
+      },
+      "batches": 12,
+      "client_id": "Agave",
+      "detectable_tau": 0.47583557302486135,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 0.6559712792275434,
+        "p_value": 0.13058694130586943,
+        "pairs": 26,
+        "q_value": 0.243161890707481,
+        "tau": -0.38461538461538464,
+        "tau_ci": [
+          -0.8888888888888888,
+          0.23076923076923078
+        ]
+      },
+      "key": "client Agave / stagger",
+      "landed": 36,
+      "landed_in_window": 36,
+      "median_position": 0.3150684931506849,
+      "price": {
+        "agree": 32,
+        "detectable_tau": 0.47583557302486135,
+        "p_value": 0.16968303169683033,
+        "pairs": 51,
+        "q_value": 0.2941117652940588,
+        "tau": 0.2549019607843137,
+        "tau_ci": [
+          -0.125,
+          0.6078431372549019
+        ]
+      },
+      "sent": 48,
+      "verdict": "arrival order decides (82% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 54,
+        "detectable_tau": 0.35249589791113345,
+        "p_value": 0.34696530346965304,
+        "pairs": 96,
+        "q_value": 0.39033596640335966,
+        "tau": 0.125,
+        "tau_ci": [
+          -0.20833333333333334,
+          0.4375
+        ]
+      },
+      "batches": 38,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.35249589791113345,
+      "groups": 16,
+      "head_to_head": {
+        "agree": 38,
+        "detectable_tau": 0.4958012392186584,
+        "p_value": 0.00029997000299970003,
+        "pairs": 46,
+        "q_value": 0.0010798920107989202,
+        "tau": 0.6521739130434783,
+        "tau_ci": [
+          0.3142857142857143,
+          0.9016393442622951
+        ]
+      },
+      "key": "client AgaveBam",
+      "landed": 64,
+      "landed_in_window": 64,
+      "median_position": 0.44193548387096776,
+      "price": {
+        "agree": 84,
+        "detectable_tau": 0.3318999469963878,
+        "p_value": 0.00009999000099990002,
+        "pairs": 96,
+        "q_value": 0.0004499550044995501,
+        "tau": 0.75,
+        "tau_ci": [
+          0.5833333333333334,
+          0.8958333333333334
+        ]
+      },
+      "sent": 134,
+      "verdict": "priority fee decides (loose: 88% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 18,
+        "detectable_tau": 0.5360408514551644,
+        "p_value": 0.5242475752424758,
+        "pairs": 42,
+        "q_value": 0.6904724161730168,
+        "tau": -0.14285714285714285,
+        "tau_ci": [
+          -0.5714285714285714,
+          0.2857142857142857
+        ]
+      },
+      "batches": 13,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.5389568650739761,
+      "groups": 7,
+      "head_to_head": {
+        "agree": 20,
+        "detectable_tau": 0.6986771172445642,
+        "p_value": 0.0058994100589941,
+        "pairs": 24,
+        "q_value": 0.0193745331349218,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.15789473684210525,
+          0.9375
+        ]
+      },
+      "key": "client AgaveBam / burst",
+      "landed": 28,
+      "landed_in_window": 28,
+      "median_position": 0.31746031746031744,
+      "price": {
+        "agree": 34,
+        "detectable_tau": 0.5389568650739761,
+        "p_value": 0.0006999300069993001,
+        "pairs": 42,
+        "q_value": 0.003779622037796221,
+        "tau": 0.6190476190476191,
+        "tau_ci": [
+          0.3333333333333333,
+          0.8571428571428571
+        ]
+      },
+      "sent": 48,
+      "verdict": "priority fee decides (loose: 81% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 15,
+        "detectable_tau": 0.5860974039938698,
+        "p_value": 1.0,
+        "pairs": 30,
+        "q_value": 1.0,
+        "tau": 0.0,
+        "tau_ci": [
+          -0.4,
+          0.5333333333333333
+        ]
+      },
+      "batches": 11,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.5860974039938698,
+      "groups": 5,
+      "head_to_head": {
+        "agree": 15,
+        "detectable_tau": 0.8775910022432885,
+        "p_value": 0.001999800019998,
+        "pairs": 15,
+        "q_value": 0.008722204702606663,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam / conflict",
+      "landed": 20,
+      "landed_in_window": 20,
+      "median_position": 0.5652173913043478,
       "price": {
         "agree": 30,
-        "p_value": 0.0007999200079992001,
-        "pairs": 36,
-        "q_value": 0.0061708114902795435,
-        "tau": 0.6666666666666666
+        "detectable_tau": 0.5835099703818739,
+        "p_value": 0.00009999000099990002,
+        "pairs": 30,
+        "q_value": 0.0008999100089991,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
       },
-      "sent": 28,
+      "sent": 40,
+      "verdict": "priority fee decides (strict: 100% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 21,
+        "detectable_tau": 0.705891209176112,
+        "p_value": 0.0020997900209979003,
+        "pairs": 24,
+        "q_value": 0.008722204702606663,
+        "tau": 0.75,
+        "tau_ci": [
+          0.25,
+          1.0
+        ]
+      },
+      "batches": 14,
+      "client_id": "AgaveBam",
+      "detectable_tau": 0.705891209176112,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 3,
+        "detectable_tau": 1.0,
+        "p_value": 1.0,
+        "pairs": 7,
+        "q_value": 1.0,
+        "tau": -0.14285714285714285,
+        "tau_ci": [
+          -1.0,
+          1.0
+        ]
+      },
+      "key": "client AgaveBam / stagger",
+      "landed": 16,
+      "landed_in_window": 16,
+      "median_position": 0.44193548387096776,
+      "price": {
+        "agree": 20,
+        "detectable_tau": 0.705661907831753,
+        "p_value": 0.008999100089991,
+        "pairs": 24,
+        "q_value": 0.024567543245675432,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "sent": 46,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 135,
+        "detectable_tau": 0.24322461593848987,
+        "p_value": 0.00009999000099990002,
+        "pairs": 198,
+        "q_value": 0.0004499550044995501,
+        "tau": 0.36363636363636365,
+        "tau_ci": [
+          0.1414141414141414,
+          0.5757575757575758
+        ]
+      },
+      "batches": 37,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.24322461593848987,
+      "groups": 33,
+      "head_to_head": {
+        "agree": 47,
+        "detectable_tau": 0.32355623844009596,
+        "p_value": 0.1416858314168583,
+        "pairs": 114,
+        "q_value": 0.17002299770022997,
+        "tau": -0.17543859649122806,
+        "tau_ci": [
+          -0.5,
+          0.15315315315315314
+        ]
+      },
+      "key": "client Firedancer",
+      "landed": 132,
+      "landed_in_window": 132,
+      "median_position": 0.12259059367771781,
+      "price": {
+        "agree": 115,
+        "detectable_tau": 0.2330245628915703,
+        "p_value": 0.0634936506349365,
+        "pairs": 198,
+        "q_value": 0.103898701038987,
+        "tau": 0.16161616161616163,
+        "tau_ci": [
+          -0.0707070707070707,
+          0.3939393939393939
+        ]
+      },
+      "sent": 148,
+      "verdict": "arrival order decides (68% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 38,
+        "detectable_tau": 0.42779382309949315,
+        "p_value": 0.35676432356764326,
+        "pairs": 66,
+        "q_value": 0.5206830668284523,
+        "tau": 0.15151515151515152,
+        "tau_ci": [
+          -0.18181818181818182,
+          0.5151515151515151
+        ]
+      },
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.42779382309949315,
+      "groups": 11,
+      "head_to_head": {
+        "agree": 22,
+        "detectable_tau": 0.5735323032178408,
+        "p_value": 0.4216578342165783,
+        "pairs": 37,
+        "q_value": 0.5692380761923808,
+        "tau": 0.1891891891891892,
+        "tau_ci": [
+          -0.45454545454545453,
+          0.7647058823529411
+        ]
+      },
+      "key": "client Firedancer / burst",
+      "landed": 44,
+      "landed_in_window": 44,
+      "median_position": 0.10802469135802469,
+      "price": {
+        "agree": 45,
+        "detectable_tau": 0.39617527609964315,
+        "p_value": 0.0174982501749825,
+        "pairs": 66,
+        "q_value": 0.04108284823691544,
+        "tau": 0.36363636363636365,
+        "tau_ci": [
+          -0.12121212121212122,
+          0.8181818181818182
+        ]
+      },
+      "sent": 52,
+      "verdict": "priority fee decides (loose: 68% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 34,
+        "detectable_tau": 0.47153112192377816,
+        "p_value": 0.14408559144085592,
+        "pairs": 54,
+        "q_value": 0.25935406459354066,
+        "tau": 0.25925925925925924,
+        "tau_ci": [
+          -0.14814814814814814,
+          0.6666666666666666
+        ]
+      },
+      "batches": 11,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.47153112192377816,
+      "groups": 9,
+      "head_to_head": {
+        "agree": 15,
+        "detectable_tau": 0.7064250539920323,
+        "p_value": 0.407959204079592,
+        "pairs": 24,
+        "q_value": 0.5648665902640505,
+        "tau": 0.25,
+        "tau_ci": [
+          -0.38461538461538464,
+          0.7419354838709677
+        ]
+      },
+      "key": "client Firedancer / conflict",
+      "landed": 36,
+      "landed_in_window": 36,
+      "median_position": 0.11410788381742738,
+      "price": {
+        "agree": 40,
+        "detectable_tau": 0.4713455255394844,
+        "p_value": 0.004899510048995101,
+        "pairs": 54,
+        "q_value": 0.018898110188981104,
+        "tau": 0.48148148148148145,
+        "tau_ci": [
+          0.14814814814814814,
+          0.8148148148148148
+        ]
+      },
+      "sent": 44,
+      "verdict": "priority fee decides (loose: 74% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 63,
+        "detectable_tau": 0.3704058033390625,
+        "p_value": 0.00009999000099990002,
+        "pairs": 78,
+        "q_value": 0.0008999100089991,
+        "tau": 0.6153846153846154,
+        "tau_ci": [
+          0.28205128205128205,
+          0.8974358974358975
+        ]
+      },
+      "batches": 13,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.3704058033390625,
+      "groups": 13,
+      "head_to_head": {
+        "agree": 10,
+        "detectable_tau": 0.4612081487819286,
+        "p_value": 0.00009999000099990002,
+        "pairs": 53,
+        "q_value": 0.0008999100089991,
+        "tau": -0.6226415094339622,
+        "tau_ci": [
+          -0.9215686274509803,
+          -0.25
+        ]
+      },
+      "key": "client Firedancer / stagger",
+      "landed": 52,
+      "landed_in_window": 52,
+      "median_position": 0.15869017632241814,
+      "price": {
+        "agree": 30,
+        "detectable_tau": 0.3702544557431381,
+        "p_value": 0.1075892410758924,
+        "pairs": 78,
+        "q_value": 0.20749353636064963,
+        "tau": -0.23076923076923078,
+        "tau_ci": [
+          -0.5128205128205128,
+          0.05128205128205128
+        ]
+      },
+      "sent": 52,
+      "verdict": "arrival order decides (81% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 79,
+        "detectable_tau": 0.29211272245557773,
+        "p_value": 0.0327967203279672,
+        "pairs": 128,
+        "q_value": 0.059034096590340965,
+        "tau": 0.234375,
+        "tau_ci": [
+          -0.03546099290780142,
+          0.5
+        ]
+      },
+      "batches": 39,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.29214043146432034,
+      "groups": 25,
+      "head_to_head": {
+        "agree": 26,
+        "detectable_tau": 0.4535266425741367,
+        "p_value": 0.7330266973302669,
+        "pairs": 56,
+        "q_value": 0.7761459148202826,
+        "tau": -0.07142857142857142,
+        "tau_ci": [
+          -0.46938775510204084,
+          0.31343283582089554
+        ]
+      },
+      "key": "client HarmonicAgave",
+      "landed": 156,
+      "landed_in_window": 96,
+      "median_position": 0.2222222222222222,
+      "price": {
+        "agree": 75,
+        "detectable_tau": 0.29214043146432034,
+        "p_value": 0.12208779122087791,
+        "pairs": 128,
+        "q_value": 0.16904463399813865,
+        "tau": 0.171875,
+        "tau_ci": [
+          -0.03875968992248062,
+          0.38461538461538464
+        ]
+      },
+      "sent": 156,
+      "verdict": "no rule detected (this cell could detect tau of ±0.29 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 18,
+        "detectable_tau": 0.47941328529572147,
+        "p_value": 0.18448155184481552,
+        "pairs": 48,
+        "q_value": 0.2941117652940588,
+        "tau": -0.25,
+        "tau_ci": [
+          -0.5416666666666666,
+          0.0
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.4804261667601352,
+      "groups": 8,
+      "head_to_head": {
+        "agree": 11,
+        "detectable_tau": 0.7832469639778223,
+        "p_value": 0.5467453254674532,
+        "pairs": 18,
+        "q_value": 0.7029582756010113,
+        "tau": 0.2222222222222222,
+        "tau_ci": [
+          -0.21739130434782608,
+          0.7142857142857143
+        ]
+      },
+      "key": "client HarmonicAgave / burst",
+      "landed": 56,
+      "landed_in_window": 32,
+      "median_position": 0.05670103092783505,
+      "price": {
+        "agree": 22,
+        "detectable_tau": 0.4804261667601352,
+        "p_value": 0.7177282271772822,
+        "pairs": 48,
+        "q_value": 0.8093565643435657,
+        "tau": -0.08333333333333333,
+        "tau_ci": [
+          -0.375,
+          0.25
+        ]
+      },
+      "sent": 56,
+      "verdict": "no rule detected (this cell could detect tau of ±0.48 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 14,
+        "detectable_tau": 0.7062188634913339,
+        "p_value": 0.6141385861413858,
+        "pairs": 24,
+        "q_value": 0.736966303369663,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.4166666666666667,
+          0.75
+        ]
+      },
+      "batches": 11,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.7062188634913339,
+      "groups": 4,
+      "head_to_head": {
+        "agree": 10,
+        "detectable_tau": 0.9589933828621349,
+        "p_value": 0.0903909609039096,
+        "pairs": 12,
+        "q_value": 0.1807819218078192,
+        "tau": 0.6666666666666666,
+        "tau_ci": [
+          -0.14285714285714285,
+          1.0
+        ]
+      },
+      "key": "client HarmonicAgave / conflict",
+      "landed": 44,
+      "landed_in_window": 16,
+      "median_position": 0.1174496644295302,
+      "price": {
+        "agree": 22,
+        "detectable_tau": 0.7056705103669149,
+        "p_value": 0.00029997000299970003,
+        "pairs": 24,
+        "q_value": 0.002314054308854829,
+        "tau": 0.8333333333333334,
+        "tau_ci": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "sent": 44,
+      "verdict": "priority fee decides (loose: 92% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 47,
+        "detectable_tau": 0.4524124409050254,
+        "p_value": 0.00009999000099990002,
+        "pairs": 56,
+        "q_value": 0.0008999100089991,
+        "tau": 0.6785714285714286,
+        "tau_ci": [
+          0.29411764705882354,
+          1.0
+        ]
+      },
+      "batches": 14,
+      "client_id": "HarmonicAgave",
+      "detectable_tau": 0.45319845491728505,
+      "groups": 13,
+      "head_to_head": {
+        "agree": 5,
+        "detectable_tau": 0.6612879115129675,
+        "p_value": 0.011698830116988301,
+        "pairs": 26,
+        "q_value": 0.030082706015112776,
+        "tau": -0.6153846153846154,
+        "tau_ci": [
+          -1.0,
+          -0.07692307692307693
+        ]
+      },
+      "key": "client HarmonicAgave / stagger",
+      "landed": 56,
+      "landed_in_window": 48,
+      "median_position": 0.5537459283387622,
+      "price": {
+        "agree": 31,
+        "detectable_tau": 0.45319845491728505,
+        "p_value": 0.5720427957204279,
+        "pairs": 56,
+        "q_value": 0.7183793248582119,
+        "tau": 0.10714285714285714,
+        "tau_ci": [
+          -0.15789473684210525,
+          0.375
+        ]
+      },
+      "sent": 56,
+      "verdict": "arrival order decides (84% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 82,
+        "detectable_tau": 0.30051146900168174,
+        "p_value": 0.025397460253974602,
+        "pairs": 132,
+        "q_value": 0.050794920507949204,
+        "tau": 0.24242424242424243,
+        "tau_ci": [
+          -0.02127659574468085,
+          0.5038759689922481
+        ]
+      },
+      "batches": 38,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.30051146900168174,
+      "groups": 24,
+      "head_to_head": {
+        "agree": 39,
+        "detectable_tau": 0.41752390828253794,
+        "p_value": 0.10768923107689231,
+        "pairs": 62,
+        "q_value": 0.16153384661533846,
+        "tau": 0.25806451612903225,
+        "tau_ci": [
+          -0.125,
+          0.5789473684210527
+        ]
+      },
+      "key": "client HarmonicFiredancer",
+      "landed": 148,
+      "landed_in_window": 96,
+      "median_position": 0.26199261992619927,
+      "price": {
+        "agree": 98,
+        "detectable_tau": 0.2840486910822682,
+        "p_value": 0.00009999000099990002,
+        "pairs": 132,
+        "q_value": 0.0004499550044995501,
+        "tau": 0.48484848484848486,
+        "tau_ci": [
+          0.2857142857142857,
+          0.6805555555555556
+        ]
+      },
+      "sent": 152,
+      "verdict": "priority fee decides (loose: 74% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 35,
+        "detectable_tau": 0.4315150008401951,
+        "p_value": 0.3408659134086591,
+        "pairs": 60,
+        "q_value": 0.5112988701129887,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.2,
+          0.5
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.4315150008401951,
+      "groups": 10,
+      "head_to_head": {
+        "agree": 14,
+        "detectable_tau": 0.610634464957629,
+        "p_value": 0.5923407659234077,
+        "pairs": 24,
+        "q_value": 0.7269636672696367,
+        "tau": 0.16666666666666666,
+        "tau_ci": [
+          -0.25,
+          0.5454545454545454
+        ]
+      },
+      "key": "client HarmonicFiredancer / burst",
+      "landed": 52,
+      "landed_in_window": 40,
+      "median_position": 0.3728448275862069,
+      "price": {
+        "agree": 39,
+        "detectable_tau": 0.4315002422010361,
+        "p_value": 0.06919308069193081,
+        "pairs": 60,
+        "q_value": 0.14370870605247169,
+        "tau": 0.3,
+        "tau_ci": [
+          0.03333333333333333,
+          0.5666666666666667
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.43 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 23,
+        "detectable_tau": 0.4796340615097437,
+        "p_value": 0.9083091690830917,
+        "pairs": 48,
+        "q_value": 0.9617391202056265,
+        "tau": -0.041666666666666664,
+        "tau_ci": [
+          -0.4166666666666667,
+          0.4166666666666667
+        ]
+      },
+      "batches": 12,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.4805018465987878,
+      "groups": 8,
+      "head_to_head": {
+        "agree": 25,
+        "detectable_tau": 0.678250257700531,
+        "p_value": 0.00039996000399960006,
+        "pairs": 27,
+        "q_value": 0.0023997600239976003,
+        "tau": 0.8518518518518519,
+        "tau_ci": [
+          0.6,
+          1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / conflict",
+      "landed": 48,
+      "landed_in_window": 32,
+      "median_position": 0.18840579710144928,
+      "price": {
+        "agree": 46,
+        "detectable_tau": 0.4805018465987878,
+        "p_value": 0.00009999000099990002,
+        "pairs": 48,
+        "q_value": 0.0008999100089991,
+        "tau": 0.9166666666666666,
+        "tau_ci": [
+          0.7916666666666666,
+          1.0
+        ]
+      },
+      "sent": 48,
+      "verdict": "priority fee decides (strict: 96% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 24,
+        "detectable_tau": 0.6998358085309957,
+        "p_value": 0.00009999000099990002,
+        "pairs": 24,
+        "q_value": 0.0008999100089991,
+        "tau": 1.0,
+        "tau_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "batches": 13,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.6998358085309957,
+      "groups": 6,
+      "head_to_head": {
+        "agree": 0,
+        "detectable_tau": 0.9405097245739331,
+        "p_value": 0.006099390060993901,
+        "pairs": 11,
+        "q_value": 0.0193745331349218,
+        "tau": -1.0,
+        "tau_ci": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "key": "client HarmonicFiredancer / stagger",
+      "landed": 48,
+      "landed_in_window": 24,
+      "median_position": 0.42024539877300615,
+      "price": {
+        "agree": 13,
+        "detectable_tau": 0.6162655596487484,
+        "p_value": 0.8634136586341365,
+        "pairs": 24,
+        "q_value": 0.9324867513248676,
+        "tau": 0.08333333333333333,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.5238095238095238
+        ]
+      },
+      "sent": 52,
+      "verdict": "arrival order decides (100% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 89,
+        "detectable_tau": 0.29181539935593287,
+        "p_value": 0.00039996000399960006,
+        "pairs": 128,
+        "q_value": 0.0011998800119988001,
+        "tau": 0.390625,
+        "tau_ci": [
+          0.15447154471544716,
+          0.609375
+        ]
+      },
+      "batches": 38,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.29204946114254304,
+      "groups": 23,
+      "head_to_head": {
+        "agree": 27,
+        "detectable_tau": 0.4573790559348523,
+        "p_value": 0.913008699130087,
+        "pairs": 56,
+        "q_value": 0.913008699130087,
+        "tau": -0.03571428571428571,
+        "tau_ci": [
+          -0.39622641509433965,
+          0.3225806451612903
+        ]
+      },
+      "key": "client JitoLabs",
+      "landed": 88,
+      "landed_in_window": 88,
+      "median_position": 0.2264808362369338,
+      "price": {
+        "agree": 87,
+        "detectable_tau": 0.29204946114254304,
+        "p_value": 0.0011998800119988001,
+        "pairs": 128,
+        "q_value": 0.0030854057451397718,
+        "tau": 0.359375,
+        "tau_ci": [
+          0.15447154471544716,
+          0.5639097744360902
+        ]
+      },
+      "sent": 136,
+      "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
+    },
+    {
+      "arrival": {
+        "agree": 26,
+        "detectable_tau": 0.4795330535367138,
+        "p_value": 0.7194280571942806,
+        "pairs": 48,
+        "q_value": 0.8093565643435657,
+        "tau": 0.08333333333333333,
+        "tau_ci": [
+          -0.08333333333333333,
+          0.20833333333333334
+        ]
+      },
+      "batches": 13,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.4795535863380327,
+      "groups": 8,
+      "head_to_head": {
+        "agree": 14,
+        "detectable_tau": 0.7221601290001705,
+        "p_value": 0.18518148185181482,
+        "pairs": 20,
+        "q_value": 0.2941117652940588,
+        "tau": 0.4,
+        "tau_ci": [
+          0.043478260869565216,
+          0.8181818181818182
+        ]
+      },
+      "key": "client JitoLabs / burst",
+      "landed": 32,
+      "landed_in_window": 32,
+      "median_position": 0.2264808362369338,
+      "price": {
+        "agree": 34,
+        "detectable_tau": 0.4795535863380327,
+        "p_value": 0.022797720227977204,
+        "pairs": 48,
+        "q_value": 0.051294870512948704,
+        "tau": 0.4166666666666667,
+        "tau_ci": [
+          0.125,
+          0.6666666666666666
+        ]
+      },
+      "sent": 52,
+      "verdict": "no rule detected (this cell could detect tau of ±0.48 or stronger)"
+    },
+    {
+      "arrival": {
+        "agree": 34,
+        "detectable_tau": 0.5386666775318564,
+        "p_value": 0.0011998800119988001,
+        "pairs": 42,
+        "q_value": 0.005890320058903201,
+        "tau": 0.6190476190476191,
+        "tau_ci": [
+          0.23809523809523808,
+          0.9047619047619048
+        ]
+      },
+      "batches": 12,
+      "client_id": "JitoLabs",
+      "detectable_tau": 0.5386666775318564,
+      "groups": 7,
+      "head_to_head": {
+        "agree": 8,
+        "detectable_tau": 0.7949925302697133,
+        "p_value": 0.8474152584741526,
+        "pairs": 18,
+        "q_value": 0.9324867513248676,
+        "tau": -0.1111111111111111,
+        "tau_ci": [
+          -0.7142857142857143,
+          0.68
+        ]
+      },
+      "key": "client JitoLabs / conflict",
+      "landed": 28,
+      "landed_in_window": 28,
+      "median_position": 0.1643192488262911,
+      "price": {
+        "agree": 32,
+        "detectable_tau": 0.538356388628747,
+        "p_value": 0.0059994000599940004,
+        "pairs": 42,
+        "q_value": 0.0193745331349218,
+        "tau": 0.5238095238095238,
+        "tau_ci": [
+          0.14285714285714285,
+          0.9047619047619048
+        ]
+      },
+      "sent": 44,
       "verdict": "both price and arrival correlate; head-to-head pairs do not separate them"
     },
     {
       "arrival": {
         "agree": 29,
-        "p_value": 0.008599140085991401,
+        "detectable_tau": 0.5302457145557017,
+        "p_value": 0.007799220077992201,
         "pairs": 38,
-        "q_value": 0.025797420257974202,
-        "tau": 0.5263157894736842
+        "q_value": 0.023397660233976603,
+        "tau": 0.5263157894736842,
+        "tau_ci": [
+          -0.07142857142857142,
+          0.9534883720930233
+        ]
       },
-      "batches": 10,
+      "batches": 13,
       "client_id": "JitoLabs",
+      "detectable_tau": 0.5313925531348445,
       "groups": 8,
       "head_to_head": {
         "agree": 5,
-        "p_value": 0.18168183181681832,
+        "detectable_tau": 0.795463882529903,
+        "p_value": 0.17718228177182282,
         "pairs": 18,
-        "q_value": 0.34798589106606587,
-        "tau": -0.4444444444444444
+        "q_value": 0.2941117652940588,
+        "tau": -0.4444444444444444,
+        "tau_ci": [
+          -1.0,
+          0.2
+        ]
       },
       "key": "client JitoLabs / stagger",
       "landed": 28,
@@ -760,255 +4681,383 @@
       "median_position": 0.29955947136563876,
       "price": {
         "agree": 21,
-        "p_value": 0.6839316068393161,
+        "detectable_tau": 0.5313925531348445,
+        "p_value": 0.6772322767723228,
         "pairs": 38,
-        "q_value": 0.802876234115719,
-        "tau": 0.10526315789473684
+        "q_value": 0.7950118031675094,
+        "tau": 0.10526315789473684,
+        "tau_ci": [
+          -0.15789473684210525,
+          0.42105263157894735
+        ]
       },
-      "sent": 36,
+      "sent": 40,
       "verdict": "arrival order decides (76% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 25,
-        "p_value": 0.36746325367463256,
-        "pairs": 42,
-        "q_value": 0.4899510048995101,
-        "tau": 0.19047619047619047
+        "agree": 32,
+        "detectable_tau": 0.43041919238040627,
+        "p_value": 0.7479252074792521,
+        "pairs": 60,
+        "q_value": 0.791920807919208,
+        "tau": 0.06666666666666667,
+        "tau_ci": [
+          -0.3333333333333333,
+          0.4666666666666667
+        ]
       },
-      "batches": 13,
+      "batches": 19,
       "client_id": "AgaveBam",
-      "groups": 7,
+      "detectable_tau": 0.43041919238040627,
+      "groups": 10,
       "head_to_head": {
-        "agree": 14,
-        "p_value": 0.014298570142985701,
-        "pairs": 16,
-        "q_value": 0.0428957104289571,
-        "tau": 0.75
+        "agree": 25,
+        "detectable_tau": 0.5974196518927355,
+        "p_value": 0.00009999000099990002,
+        "pairs": 27,
+        "q_value": 0.0007199280071992801,
+        "tau": 0.8518518518518519,
+        "tau_ci": [
+          0.4782608695652174,
+          1.0
+        ]
       },
       "key": "validator 5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux (AgaveBam)",
-      "landed": 28,
-      "landed_in_window": 28,
+      "landed": 40,
+      "landed_in_window": 40,
       "median_position": 0.5635179153094463,
       "price": {
-        "agree": 37,
+        "agree": 55,
+        "detectable_tau": 0.42955418596340356,
         "p_value": 0.00009999000099990002,
-        "pairs": 42,
-        "q_value": 0.0011998800119988001,
-        "tau": 0.7619047619047619
+        "pairs": 60,
+        "q_value": 0.0007199280071992801,
+        "tau": 0.8333333333333334,
+        "tau_ci": [
+          0.6666666666666666,
+          0.9666666666666667
+        ]
       },
-      "sent": 52,
-      "verdict": "priority fee decides (loose: 88% of pairs follow it)"
+      "sent": 76,
+      "verdict": "priority fee decides (loose: 92% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 23,
-        "p_value": 0.0750924907509249,
-        "pairs": 33,
-        "q_value": 0.18022197780221977,
-        "tau": 0.3939393939393939
+        "agree": 34,
+        "detectable_tau": 0.48306785491097703,
+        "p_value": 0.004299570042995701,
+        "pairs": 45,
+        "q_value": 0.012183397044910895,
+        "tau": 0.5111111111111111,
+        "tau_ci": [
+          -0.041666666666666664,
+          0.9583333333333334
+        ]
       },
-      "batches": 10,
+      "batches": 15,
       "client_id": "Agave",
-      "groups": 6,
+      "detectable_tau": 0.48338432294033074,
+      "groups": 8,
       "head_to_head": {
-        "agree": 9,
-        "p_value": 0.6742325767423257,
-        "pairs": 15,
-        "q_value": 0.6742325767423257,
-        "tau": 0.2
+        "agree": 10,
+        "detectable_tau": 0.7136626445599201,
+        "p_value": 0.6243375662433757,
+        "pairs": 24,
+        "q_value": 0.6810955268109552,
+        "tau": -0.16666666666666666,
+        "tau_ci": [
+          -1.0,
+          0.5
+        ]
       },
       "key": "validator 5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS (Agave)",
-      "landed": 24,
-      "landed_in_window": 24,
-      "median_position": 0.21712538226299694,
+      "landed": 32,
+      "landed_in_window": 32,
+      "median_position": 0.24926686217008798,
       "price": {
-        "agree": 26,
-        "p_value": 0.007099290070992901,
-        "pairs": 33,
-        "q_value": 0.028397160283971608,
-        "tau": 0.5757575757575758
+        "agree": 30,
+        "detectable_tau": 0.48338432294033074,
+        "p_value": 0.0781921807819218,
+        "pairs": 45,
+        "q_value": 0.1655834416558344,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          -0.022222222222222223,
+          0.6666666666666666
+        ]
       },
-      "sent": 40,
-      "verdict": "priority fee decides (loose: 79% of pairs follow it)"
+      "sent": 56,
+      "verdict": "arrival order decides (76% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 41,
-        "p_value": 0.0038996100389961006,
-        "pairs": 56,
-        "q_value": 0.019798020197980205,
-        "tau": 0.4642857142857143
+        "agree": 44,
+        "detectable_tau": 0.41905082013421835,
+        "p_value": 0.0020997900209979003,
+        "pairs": 59,
+        "q_value": 0.009449055094490552,
+        "tau": 0.4915254237288136,
+        "tau_ci": [
+          0.0967741935483871,
+          0.8604651162790697
+        ]
       },
-      "batches": 14,
+      "batches": 19,
       "client_id": "HarmonicAgave",
-      "groups": 11,
+      "detectable_tau": 0.41953641588985635,
+      "groups": 12,
       "head_to_head": {
         "agree": 7,
-        "p_value": 0.2702729727027297,
-        "pairs": 21,
-        "q_value": 0.4094950504949505,
-        "tau": -0.3333333333333333
+        "detectable_tau": 0.6820441183731086,
+        "p_value": 0.15148485151484853,
+        "pairs": 23,
+        "q_value": 0.24788430247884305,
+        "tau": -0.391304347826087,
+        "tau_ci": [
+          -0.8666666666666667,
+          0.13333333333333333
+        ]
       },
       "key": "validator 5ZqveVffQPiUbkjBg4KD9kib1MKHLqiFno4ke9jSq9qk (HarmonicAgave)",
-      "landed": 56,
-      "landed_in_window": 40,
-      "median_position": 0.3504273504273504,
+      "landed": 76,
+      "landed_in_window": 44,
+      "median_position": 0.37317784256559766,
       "price": {
-        "agree": 34,
-        "p_value": 0.21427857214278573,
-        "pairs": 56,
-        "q_value": 0.3673346951019184,
-        "tau": 0.21428571428571427
+        "agree": 35,
+        "detectable_tau": 0.41953641588985635,
+        "p_value": 0.27887211278872115,
+        "pairs": 59,
+        "q_value": 0.3718294837182949,
+        "tau": 0.1864406779661017,
+        "tau_ci": [
+          -0.058823529411764705,
+          0.4626865671641791
+        ]
       },
-      "sent": 56,
-      "verdict": "arrival order decides (73% of pairs follow it)"
+      "sent": 76,
+      "verdict": "arrival order decides (75% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 33,
-        "p_value": 0.0015998400159984002,
-        "pairs": 42,
-        "q_value": 0.011518848115188482,
-        "tau": 0.5714285714285714
-      },
-      "batches": 14,
-      "client_id": "Agave",
-      "groups": 7,
-      "head_to_head": {
-        "agree": 8,
-        "p_value": 0.4550544945505449,
-        "pairs": 21,
-        "q_value": 0.5850700644221292,
-        "tau": -0.23809523809523808
-      },
-      "key": "validator 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE (Agave)",
-      "landed": 28,
-      "landed_in_window": 28,
-      "median_position": 0.2783171521035599,
-      "price": {
-        "agree": 28,
-        "p_value": 0.09099090090990901,
-        "pairs": 42,
-        "q_value": 0.19268661369157203,
-        "tau": 0.3333333333333333
-      },
-      "sent": 56,
-      "verdict": "arrival order decides (79% of pairs follow it)"
-    },
-    {
-      "arrival": {
-        "agree": 36,
-        "p_value": 0.6175382461753824,
+        "agree": 54,
+        "detectable_tau": 0.4291884049365631,
+        "p_value": 0.00009999000099990002,
         "pairs": 66,
-        "q_value": 0.6445412601596984,
-        "tau": 0.09090909090909091
+        "q_value": 0.0007199280071992801,
+        "tau": 0.6363636363636364,
+        "tau_ci": [
+          0.3939393939393939,
+          0.8484848484848485
+        ]
       },
-      "batches": 13,
-      "client_id": "Firedancer",
+      "batches": 20,
+      "client_id": "Agave",
+      "detectable_tau": 0.4291884049365631,
       "groups": 11,
       "head_to_head": {
-        "agree": 30,
-        "p_value": 0.15658434156584342,
-        "pairs": 47,
-        "q_value": 0.29668612086159807,
-        "tau": 0.2765957446808511
+        "agree": 10,
+        "detectable_tau": 0.5792594522934807,
+        "p_value": 0.1596840315968403,
+        "pairs": 30,
+        "q_value": 0.2499402233689674,
+        "tau": -0.3333333333333333,
+        "tau_ci": [
+          -0.8235294117647058,
+          0.28
+        ]
       },
-      "key": "validator 9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY (Firedancer)",
+      "key": "validator 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE (Agave)",
       "landed": 44,
       "landed_in_window": 44,
-      "median_position": 0.11049723756906077,
+      "median_position": 0.430327868852459,
       "price": {
-        "agree": 49,
-        "p_value": 0.000999900009999,
+        "agree": 44,
+        "detectable_tau": 0.39626709260196324,
+        "p_value": 0.027797220277972202,
         "pairs": 66,
-        "q_value": 0.008999100089991,
-        "tau": 0.48484848484848486
+        "q_value": 0.06671332866713328,
+        "tau": 0.3333333333333333,
+        "tau_ci": [
+          -0.030303030303030304,
+          0.6363636363636364
+        ]
       },
-      "sent": 52,
-      "verdict": "priority fee decides (loose: 74% of pairs follow it)"
+      "sent": 80,
+      "verdict": "arrival order decides (82% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 30,
-        "p_value": 0.35306469353064696,
-        "pairs": 51,
-        "q_value": 0.48885880642704965,
-        "tau": 0.17647058823529413
+        "agree": 58,
+        "detectable_tau": 0.35318397072133173,
+        "p_value": 0.10978902109789021,
+        "pairs": 96,
+        "q_value": 0.1931806819318068,
+        "tau": 0.20833333333333334,
+        "tau_ci": [
+          -0.10416666666666667,
+          0.5208333333333334
+        ]
       },
-      "batches": 13,
-      "client_id": "HarmonicFiredancer",
-      "groups": 9,
+      "batches": 19,
+      "client_id": "Firedancer",
+      "detectable_tau": 0.35318397072133173,
+      "groups": 16,
       "head_to_head": {
-        "agree": 15,
-        "p_value": 0.283971602839716,
-        "pairs": 23,
-        "q_value": 0.4094950504949505,
-        "tau": 0.30434782608695654
+        "agree": 38,
+        "detectable_tau": 0.4320721651895194,
+        "p_value": 0.11038896110388961,
+        "pairs": 60,
+        "q_value": 0.1931806819318068,
+        "tau": 0.26666666666666666,
+        "tau_ci": [
+          -0.25,
+          0.7142857142857143
+        ]
+      },
+      "key": "validator 9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY (Firedancer)",
+      "landed": 64,
+      "landed_in_window": 64,
+      "median_position": 0.12413261372397841,
+      "price": {
+        "agree": 74,
+        "detectable_tau": 0.3531231669893565,
+        "p_value": 0.00009999000099990002,
+        "pairs": 96,
+        "q_value": 0.0007199280071992801,
+        "tau": 0.5416666666666666,
+        "tau_ci": [
+          0.20833333333333334,
+          0.8333333333333334
+        ]
+      },
+      "sent": 76,
+      "verdict": "priority fee decides (loose: 77% of pairs follow it)"
+    },
+    {
+      "arrival": {
+        "agree": 38,
+        "detectable_tau": 0.42896286008716433,
+        "p_value": 0.2091790820917908,
+        "pairs": 63,
+        "q_value": 0.3137686231376862,
+        "tau": 0.20634920634920634,
+        "tau_ci": [
+          -0.18181818181818182,
+          0.5789473684210527
+        ]
+      },
+      "batches": 19,
+      "client_id": "HarmonicFiredancer",
+      "detectable_tau": 0.42896286008716433,
+      "groups": 11,
+      "head_to_head": {
+        "agree": 18,
+        "detectable_tau": 0.6130758332603967,
+        "p_value": 0.258974102589741,
+        "pairs": 28,
+        "q_value": 0.3585795266627183,
+        "tau": 0.2857142857142857,
+        "tau_ci": [
+          -0.2727272727272727,
+          0.6470588235294118
+        ]
       },
       "key": "validator Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM (HarmonicFiredancer)",
-      "landed": 52,
-      "landed_in_window": 36,
-      "median_position": 0.35083532219570407,
+      "landed": 76,
+      "landed_in_window": 44,
+      "median_position": 0.24514563106796117,
       "price": {
-        "agree": 37,
-        "p_value": 0.009599040095990401,
-        "pairs": 51,
-        "q_value": 0.031415040314150405,
-        "tau": 0.45098039215686275
+        "agree": 46,
+        "detectable_tau": 0.4279393863104502,
+        "p_value": 0.0030996900309969004,
+        "pairs": 63,
+        "q_value": 0.011158884111588841,
+        "tau": 0.4603174603174603,
+        "tau_ci": [
+          0.19298245614035087,
+          0.696969696969697
+        ]
       },
-      "sent": 52,
+      "sent": 76,
       "verdict": "priority fee decides (loose: 73% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 14,
-        "p_value": 0.6140385961403859,
-        "pairs": 24,
-        "q_value": 0.6445412601596984,
-        "tau": 0.16666666666666666
+        "agree": 22,
+        "detectable_tau": 0.5585101931827566,
+        "p_value": 0.33936606339366066,
+        "pairs": 36,
+        "q_value": 0.4072392760723928,
+        "tau": 0.2222222222222222,
+        "tau_ci": [
+          -0.2777777777777778,
+          0.6666666666666666
+        ]
       },
-      "batches": 13,
+      "batches": 19,
       "client_id": "AgaveBam",
-      "groups": 4,
+      "detectable_tau": 0.5585101931827566,
+      "groups": 6,
       "head_to_head": {
-        "agree": 9,
-        "p_value": 0.5110488951104889,
-        "pairs": 14,
-        "q_value": 0.6132586741325866,
-        "tau": 0.2857142857142857
+        "agree": 13,
+        "detectable_tau": 0.8093616852836484,
+        "p_value": 0.25317468253174685,
+        "pairs": 19,
+        "q_value": 0.3585795266627183,
+        "tau": 0.3684210526315789,
+        "tau_ci": [
+          -0.38461538461538464,
+          0.8
+        ]
       },
       "key": "validator DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy (AgaveBam)",
-      "landed": 16,
-      "landed_in_window": 16,
+      "landed": 24,
+      "landed_in_window": 24,
       "median_position": 0.30952380952380953,
       "price": {
-        "agree": 18,
-        "p_value": 0.06009399060093991,
-        "pairs": 24,
-        "q_value": 0.1545274044024169,
-        "tau": 0.5
+        "agree": 29,
+        "detectable_tau": 0.5577672628179564,
+        "p_value": 0.0023997600239976003,
+        "pairs": 36,
+        "q_value": 0.009599040095990401,
+        "tau": 0.6111111111111112,
+        "tau_ci": [
+          0.3333333333333333,
+          0.8888888888888888
+        ]
       },
-      "sent": 38,
-      "verdict": "no rule detected: ordering indistinguishable from random"
+      "sent": 58,
+      "verdict": "priority fee decides (loose: 81% of pairs follow it)"
     },
     {
       "arrival": {
         "agree": 40,
-        "p_value": 0.004399560043995601,
+        "detectable_tau": 0.47230774659513175,
+        "p_value": 0.0040995900409959,
         "pairs": 54,
-        "q_value": 0.019798020197980205,
-        "tau": 0.48148148148148145
+        "q_value": 0.012183397044910895,
+        "tau": 0.48148148148148145,
+        "tau_ci": [
+          0.18518518518518517,
+          0.7777777777777778
+        ]
       },
-      "batches": 14,
+      "batches": 19,
       "client_id": "JitoLabs",
+      "detectable_tau": 0.47230774659513175,
       "groups": 9,
       "head_to_head": {
         "agree": 9,
-        "p_value": 0.48905109489051096,
+        "detectable_tau": 0.6885999385753694,
+        "p_value": 0.49205079492050796,
         "pairs": 23,
-        "q_value": 0.6070979108985654,
-        "tau": -0.21739130434782608
+        "q_value": 0.5714138263592996,
+        "tau": -0.21739130434782608,
+        "tau_ci": [
+          -0.7777777777777778,
+          0.3333333333333333
+        ]
       },
       "key": "validator E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL (JitoLabs)",
       "landed": 36,
@@ -1016,197 +5065,736 @@
       "median_position": 0.1596244131455399,
       "price": {
         "agree": 35,
-        "p_value": 0.08489151084891511,
+        "detectable_tau": 0.47157746109973103,
+        "p_value": 0.0898910108989101,
         "pairs": 54,
-        "q_value": 0.191005899410059,
-        "tau": 0.2962962962962963
+        "q_value": 0.1797820217978202,
+        "tau": 0.2962962962962963,
+        "tau_ci": [
+          0.0,
+          0.6296296296296297
+        ]
       },
-      "sent": 52,
+      "sent": 68,
       "verdict": "arrival order decides (74% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 20,
-        "p_value": 0.6127387261273872,
-        "pairs": 45,
-        "q_value": 0.6445412601596984,
-        "tau": -0.1111111111111111
+        "agree": 35,
+        "detectable_tau": 0.3959574106792678,
+        "p_value": 1.0,
+        "pairs": 69,
+        "q_value": 1.0,
+        "tau": 0.014492753623188406,
+        "tau_ci": [
+          -0.28,
+          0.3333333333333333
+        ]
       },
-      "batches": 14,
+      "batches": 20,
       "client_id": "HarmonicAgave",
-      "groups": 9,
+      "detectable_tau": 0.39675736482508245,
+      "groups": 13,
       "head_to_head": {
-        "agree": 16,
-        "p_value": 0.1660833916608339,
-        "pairs": 23,
-        "q_value": 0.29895010498950103,
-        "tau": 0.391304347826087
+        "agree": 19,
+        "detectable_tau": 0.5715733052833931,
+        "p_value": 0.5669433056694331,
+        "pairs": 33,
+        "q_value": 0.6378112188781122,
+        "tau": 0.15151515151515152,
+        "tau_ci": [
+          -0.4,
+          0.6296296296296297
+        ]
       },
       "key": "validator Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk (HarmonicAgave)",
-      "landed": 56,
-      "landed_in_window": 36,
-      "median_position": 0.061855670103092786,
+      "landed": 80,
+      "landed_in_window": 52,
+      "median_position": 0.1174496644295302,
       "price": {
-        "agree": 29,
-        "p_value": 0.13018698130186981,
-        "pairs": 45,
-        "q_value": 0.26037396260373963,
-        "tau": 0.28888888888888886
+        "agree": 40,
+        "detectable_tau": 0.39675736482508245,
+        "p_value": 0.3164683531646835,
+        "pairs": 69,
+        "q_value": 0.3998082950325657,
+        "tau": 0.15942028985507245,
+        "tau_ci": [
+          -0.15942028985507245,
+          0.52
+        ]
       },
-      "sent": 56,
-      "verdict": "no rule detected: ordering indistinguishable from random"
+      "sent": 80,
+      "verdict": "no rule detected (this cell could detect tau of ±0.40 or stronger)"
     },
     {
       "arrival": {
-        "agree": 41,
-        "p_value": 0.0428957104289571,
-        "pairs": 62,
-        "q_value": 0.11878812118788121,
-        "tau": 0.3225806451612903
+        "agree": 49,
+        "detectable_tau": 0.38844944638137824,
+        "p_value": 0.026197380261973803,
+        "pairs": 74,
+        "q_value": 0.06671332866713328,
+        "tau": 0.32432432432432434,
+        "tau_ci": [
+          -0.014492753623188406,
+          0.6455696202531646
+        ]
       },
-      "batches": 14,
+      "batches": 19,
       "client_id": "JitoLabs",
-      "groups": 12,
+      "detectable_tau": 0.3884766637043562,
+      "groups": 14,
       "head_to_head": {
-        "agree": 15,
-        "p_value": 0.6266373362663734,
-        "pairs": 26,
-        "q_value": 0.6445412601596984,
-        "tau": 0.15384615384615385
+        "agree": 18,
+        "detectable_tau": 0.5724226120478041,
+        "p_value": 0.7777222277772223,
+        "pairs": 33,
+        "q_value": 0.7999428628565716,
+        "tau": 0.09090909090909091,
+        "tau_ci": [
+          -0.32,
+          0.6
+        ]
       },
       "key": "validator HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU (JitoLabs)",
-      "landed": 44,
-      "landed_in_window": 44,
-      "median_position": 0.2264808362369338,
+      "landed": 52,
+      "landed_in_window": 52,
+      "median_position": 0.27,
       "price": {
-        "agree": 45,
-        "p_value": 0.0036996300369963003,
-        "pairs": 62,
-        "q_value": 0.019798020197980205,
-        "tau": 0.45161290322580644
+        "agree": 52,
+        "detectable_tau": 0.3884766637043562,
+        "p_value": 0.004399560043995601,
+        "pairs": 74,
+        "q_value": 0.012183397044910895,
+        "tau": 0.40540540540540543,
+        "tau_ci": [
+          0.11392405063291139,
+          0.6949152542372882
+        ]
       },
-      "sent": 52,
-      "verdict": "priority fee decides (loose: 73% of pairs follow it)"
+      "sent": 68,
+      "verdict": "priority fee decides (loose: 70% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 60,
+        "agree": 77,
+        "detectable_tau": 0.33550975208517075,
         "p_value": 0.00009999000099990002,
-        "pairs": 72,
-        "q_value": 0.0011998800119988001,
-        "tau": 0.6666666666666666
+        "pairs": 102,
+        "q_value": 0.0007199280071992801,
+        "tau": 0.5098039215686274,
+        "tau_ci": [
+          0.23529411764705882,
+          0.7843137254901961
+        ]
       },
-      "batches": 12,
+      "batches": 18,
       "client_id": "Firedancer",
-      "groups": 12,
+      "detectable_tau": 0.33550975208517075,
+      "groups": 17,
       "head_to_head": {
-        "agree": 3,
-        "p_value": 0.00009999000099990002,
-        "pairs": 36,
+        "agree": 9,
+        "detectable_tau": 0.4714196134455478,
+        "p_value": 0.00019998000199980003,
+        "pairs": 54,
         "q_value": 0.0011998800119988001,
-        "tau": -0.8333333333333334
+        "tau": -0.6666666666666666,
+        "tau_ci": [
+          -0.8787878787878788,
+          -0.39622641509433965
+        ]
       },
       "key": "validator JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB (Firedancer)",
-      "landed": 48,
-      "landed_in_window": 48,
-      "median_position": 0.13408723747980614,
+      "landed": 68,
+      "landed_in_window": 68,
+      "median_position": 0.11728395061728394,
       "price": {
-        "agree": 30,
-        "p_value": 0.2843715628437156,
-        "pairs": 72,
-        "q_value": 0.4094950504949505,
-        "tau": -0.16666666666666666
+        "agree": 41,
+        "detectable_tau": 0.3345479397666959,
+        "p_value": 0.1126887311268873,
+        "pairs": 102,
+        "q_value": 0.1931806819318068,
+        "tau": -0.19607843137254902,
+        "tau_ci": [
+          -0.45098039215686275,
+          0.0784313725490196
+        ]
       },
-      "sent": 48,
-      "verdict": "arrival order decides (83% of pairs follow it)"
+      "sent": 72,
+      "verdict": "arrival order decides (75% of pairs follow it)"
     },
     {
       "arrival": {
-        "agree": 30,
-        "p_value": 0.559044095590441,
-        "pairs": 54,
-        "q_value": 0.6445412601596984,
-        "tau": 0.1111111111111111
+        "agree": 44,
+        "detectable_tau": 0.39516857997746535,
+        "p_value": 0.06819318068193181,
+        "pairs": 69,
+        "q_value": 0.15343465653434657,
+        "tau": 0.2753623188405797,
+        "tau_ci": [
+          -0.08333333333333333,
+          0.6231884057971014
+        ]
       },
-      "batches": 14,
+      "batches": 19,
       "client_id": "HarmonicFiredancer",
-      "groups": 10,
+      "detectable_tau": 0.3953565313444269,
+      "groups": 13,
       "head_to_head": {
-        "agree": 20,
-        "p_value": 0.23667633236676333,
-        "pairs": 31,
-        "q_value": 0.38728854387288547,
-        "tau": 0.2903225806451613
+        "agree": 21,
+        "detectable_tau": 0.5854250752105855,
+        "p_value": 0.3220677932206779,
+        "pairs": 34,
+        "q_value": 0.3998082950325657,
+        "tau": 0.23529411764705882,
+        "tau_ci": [
+          -0.375,
+          0.6923076923076923
+        ]
       },
       "key": "validator JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b (HarmonicFiredancer)",
-      "landed": 56,
-      "landed_in_window": 40,
-      "median_position": 0.26199261992619927,
+      "landed": 72,
+      "landed_in_window": 52,
+      "median_position": 0.3282051282051282,
       "price": {
-        "agree": 39,
-        "p_value": 0.007899210078992101,
-        "pairs": 54,
-        "q_value": 0.028437156284371566,
-        "tau": 0.4444444444444444
+        "agree": 52,
+        "detectable_tau": 0.3953565313444269,
+        "p_value": 0.0004999500049995,
+        "pairs": 69,
+        "q_value": 0.002571171454283143,
+        "tau": 0.5072463768115942,
+        "tau_ci": [
+          0.20634920634920634,
+          0.7777777777777778
+        ]
       },
-      "sent": 56,
-      "verdict": "priority fee decides (loose: 72% of pairs follow it)"
+      "sent": 76,
+      "verdict": "priority fee decides (loose: 75% of pairs follow it)"
     }
   ],
   "paths": [
     {
       "client_id": "Agave",
-      "not_landed": 44,
+      "not_landed": 60,
       "other_leader": 0,
       "other_leader_median_offset": null,
-      "own_block": 52,
-      "rejected_at_send": 0,
-      "sent": 96
+      "own_block": 76,
+      "rejected_at_send": 4,
+      "sent": 140
     },
     {
       "client_id": "AgaveBam",
-      "not_landed": 46,
+      "not_landed": 70,
       "other_leader": 0,
       "other_leader_median_offset": null,
-      "own_block": 44,
-      "rejected_at_send": 14,
-      "sent": 104
+      "own_block": 64,
+      "rejected_at_send": 18,
+      "sent": 152
     },
     {
       "client_id": "Firedancer",
-      "not_landed": 8,
+      "not_landed": 16,
       "other_leader": 0,
       "other_leader_median_offset": null,
-      "own_block": 92,
+      "own_block": 132,
       "rejected_at_send": 0,
-      "sent": 100
+      "sent": 148
     },
     {
       "client_id": "HarmonicAgave",
       "not_landed": 0,
-      "other_leader": 36,
+      "other_leader": 60,
       "other_leader_median_offset": 24,
-      "own_block": 76,
+      "own_block": 96,
       "rejected_at_send": 0,
-      "sent": 112
+      "sent": 156
     },
     {
       "client_id": "HarmonicFiredancer",
-      "not_landed": 0,
-      "other_leader": 32,
+      "not_landed": 4,
+      "other_leader": 52,
       "other_leader_median_offset": 32,
-      "own_block": 76,
+      "own_block": 96,
       "rejected_at_send": 0,
-      "sent": 108
+      "sent": 152
     },
     {
       "client_id": "JitoLabs",
-      "not_landed": 24,
+      "not_landed": 48,
       "other_leader": 0,
       "other_leader_median_offset": null,
-      "own_block": 80,
-      "rejected_at_send": 8,
-      "sent": 112
+      "own_block": 88,
+      "rejected_at_send": 16,
+      "sent": 152
+    }
+  ],
+  "per_run": [
+    {
+      "key": "client Agave / burst",
+      "runs": [
+        {
+          "arrival_tau": 0.3333333333333333,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 1.0,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.6666666666666666,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.16666666666666666,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 1.0,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": -0.3333333333333333,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client Agave / conflict",
+      "runs": [
+        {
+          "arrival_tau": 0.4444444444444444,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.6666666666666666,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": -0.3333333333333333,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 1.0,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.8333333333333334,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.0,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client Agave / stagger",
+      "runs": [
+        {
+          "arrival_tau": 0.16666666666666666,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.16666666666666666,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.9047619047619048,
+          "blocks": 4,
+          "pairs": 21,
+          "price_tau": 0.23809523809523808,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.6666666666666666,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.3333333333333333,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client AgaveBam / burst",
+      "runs": [
+        {
+          "arrival_tau": 0.1111111111111111,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.4444444444444444,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": -0.6666666666666666,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.7777777777777778,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.6666666666666666,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 0.6666666666666666,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client AgaveBam / conflict",
+      "runs": [
+        {
+          "arrival_tau": -0.3333333333333333,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 1.0,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 1.0,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 1.0,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": -0.2222222222222222,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 1.0,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client AgaveBam / stagger",
+      "runs": [
+        {
+          "arrival_tau": 1.0,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 1.0,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 1.0,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.3333333333333333,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.0,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 1.0,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client Firedancer / burst",
+      "runs": [
+        {
+          "arrival_tau": 0.3333333333333333,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.6666666666666666,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.05555555555555555,
+          "blocks": 6,
+          "pairs": 36,
+          "price_tau": 0.1111111111111111,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.2222222222222222,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.6666666666666666,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client Firedancer / conflict",
+      "runs": [
+        {
+          "arrival_tau": 0.3333333333333333,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.3333333333333333,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.4444444444444444,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.8888888888888888,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.0,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.2222222222222222,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client Firedancer / stagger",
+      "runs": [
+        {
+          "arrival_tau": 0.6666666666666666,
+          "blocks": 4,
+          "pairs": 24,
+          "price_tau": -0.4166666666666667,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.6,
+          "blocks": 5,
+          "pairs": 30,
+          "price_tau": -0.13333333333333333,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.5833333333333334,
+          "blocks": 4,
+          "pairs": 24,
+          "price_tau": -0.16666666666666666,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client HarmonicAgave / burst",
+      "runs": [
+        {
+          "arrival_tau": -0.6666666666666666,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": -0.16666666666666666,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": -0.06666666666666667,
+          "blocks": 5,
+          "pairs": 30,
+          "price_tau": 0.06666666666666667,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": -0.3333333333333333,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": -0.6666666666666666,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client HarmonicAgave / conflict",
+      "runs": [
+        {
+          "arrival_tau": 0.0,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 0.6666666666666666,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.16666666666666666,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.8333333333333334,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.3333333333333333,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 1.0,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client HarmonicAgave / stagger",
+      "runs": [
+        {
+          "arrival_tau": 0.8666666666666667,
+          "blocks": 3,
+          "pairs": 15,
+          "price_tau": -0.06666666666666667,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.6153846153846154,
+          "blocks": 7,
+          "pairs": 26,
+          "price_tau": 0.46153846153846156,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.6,
+          "blocks": 3,
+          "pairs": 15,
+          "price_tau": -0.3333333333333333,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client HarmonicFiredancer / burst",
+      "runs": [
+        {
+          "arrival_tau": 0.3333333333333333,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.3333333333333333,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": -0.13333333333333333,
+          "blocks": 5,
+          "pairs": 30,
+          "price_tau": 0.26666666666666666,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.6666666666666666,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.3333333333333333,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client HarmonicFiredancer / conflict",
+      "runs": [
+        {
+          "arrival_tau": -0.16666666666666666,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 1.0,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": -0.25,
+          "blocks": 4,
+          "pairs": 24,
+          "price_tau": 0.9166666666666666,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.5,
+          "blocks": 2,
+          "pairs": 12,
+          "price_tau": 0.8333333333333334,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client HarmonicFiredancer / stagger",
+      "runs": [
+        {
+          "arrival_tau": 1.0,
+          "blocks": 2,
+          "pairs": 9,
+          "price_tau": -0.3333333333333333,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 1.0,
+          "blocks": 3,
+          "pairs": 12,
+          "price_tau": 0.16666666666666666,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 1.0,
+          "blocks": 1,
+          "pairs": 3,
+          "price_tau": 1.0,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client JitoLabs / burst",
+      "runs": [
+        {
+          "arrival_tau": 0.0,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.4444444444444444,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.16666666666666666,
+          "blocks": 4,
+          "pairs": 24,
+          "price_tau": 0.3333333333333333,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.0,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": 0.6666666666666666,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client JitoLabs / conflict",
+      "runs": [
+        {
+          "arrival_tau": 0.7777777777777778,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.7777777777777778,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.4444444444444444,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.5555555555555556,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": 0.6666666666666666,
+          "blocks": 1,
+          "pairs": 6,
+          "price_tau": -0.3333333333333333,
+          "run_id": "live-1793110054"
+        }
+      ]
+    },
+    {
+      "key": "client JitoLabs / stagger",
+      "runs": [
+        {
+          "arrival_tau": 0.7777777777777778,
+          "blocks": 3,
+          "pairs": 18,
+          "price_tau": 0.1111111111111111,
+          "run_id": "live-1792705232"
+        },
+        {
+          "arrival_tau": 0.3,
+          "blocks": 5,
+          "pairs": 20,
+          "price_tau": 0.1,
+          "run_id": "live-1792707349"
+        },
+        {
+          "arrival_tau": null,
+          "blocks": 0,
+          "pairs": 0,
+          "price_tau": null,
+          "run_id": "live-1793110054"
+        }
+      ]
     }
   ]
 }

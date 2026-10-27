@@ -1,8 +1,10 @@
 # One command, dry run:     docker compose up --build
-# Live (spends at most 0.05 SOL in fees):
+#   (follows the real leader schedule for the planned windows: expect 30–60 minutes; sends nothing)
+# Live (spends at most 0.05 SOL in fees, counted over every live run in ./work):
 #   docker compose run --rm itb keygen            # prints the address to fund
 #   docker compose run --rm itb pipeline --live --max-spend-sol 0.05
-# Re-derive the published statistics from the published raw data:
+# Re-derive the published statistics from the published raw data (rewrites data/RESULTS.md and
+# data/results.json, so it only runs when asked for by name):
 #   docker compose run --rm reanalyze
 services:
   itb:
@@ -20,6 +22,8 @@ services:
 
   reanalyze:
     build: .
+    # Not part of `docker compose up`: `run reanalyze` names it, which enables the profile.
+    profiles: ["reanalyze"]
     volumes:
       - ./data:/app/data
     # Fixed seed: the output is byte-identical to the committed data/RESULTS.md (checked in CI).

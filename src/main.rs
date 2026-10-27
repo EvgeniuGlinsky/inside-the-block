@@ -102,9 +102,13 @@ struct RunOpts {
     /// Where sub-payer keys of a live run are kept until swept back.
     #[arg(long, env = "KEYS_DIR", default_value = "keys")]
     keys_dir: PathBuf,
-    /// Hard cap on fees for the whole run, in SOL.
+    /// Hard cap on fees, in SOL, for all live runs recorded in --data-dir together: earlier runs
+    /// count with their actual fees, this one with its worst case.
     #[arg(long, default_value_t = 0.05)]
     max_spend_sol: f64,
+    /// Accept a --max-spend-sol above the task's 0.05 SOL budget.
+    #[arg(long, default_value_t = false)]
+    allow_over_budget: bool,
     #[arg(long, default_value_t = 8)]
     batch_size: usize,
     #[arg(long, default_value_t = 30_000)]
@@ -133,8 +137,11 @@ fn run_args(o: &RunOpts) -> Result<run::RunArgs> {
     if o.max_spend_sol <= 0.0 {
         bail!("--max-spend-sol must be positive");
     }
-    if o.max_spend_sol > 0.05 {
-        eprintln!("warning: --max-spend-sol {} is above the 0.05 SOL budget of the task", o.max_spend_sol);
+    if o.max_spend_sol > 0.05 && !o.allow_over_budget {
+        bail!(
+            "--max-spend-sol {} is above the 0.05 SOL budget of the task (add --allow-over-budget to mean it)",
+            o.max_spend_sol
+        );
     }
     Ok(run::RunArgs {
         live: o.live,
